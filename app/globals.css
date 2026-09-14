@@ -1,0 +1,154 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-2: var(--paper-2);
+  --color-paper-3: var(--paper-3);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-ink-mute: var(--ink-mute);
+  --color-line: var(--line);
+  --color-line-soft: var(--line-soft);
+  --color-signal: var(--signal);
+  --color-signal-deep: var(--signal-deep);
+  --color-espresso: var(--espresso);
+  --font-didone: var(--didone);
+  --font-mono-rh: var(--mono-rh);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+/* Rhapsody Brand OS v2 — canonical tokens, pulled verbatim from
+   Rhapsody_BrandOS_v2_FINAL.html. Do not invent new ones. */
+:root {
+  --paper: #ece7da;
+  --paper-2: #f4f0e6;
+  --paper-3: #e4dece;
+  --ink: #1c1712;
+  --ink-soft: #4c463b;
+  --ink-mute: #8b8474;
+  --line: #cdc5b2;
+  --line-soft: #ded7c5;
+  --signal: #c93a1e;
+  --signal-deep: #9e2c14;
+  --espresso: #2a211a;
+  --didone: var(--font-bodoni), Georgia, serif;
+  --mono-rh: var(--font-space-mono), ui-monospace, monospace;
+
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--paper-2);
+  --card-foreground: var(--ink);
+  --popover: var(--paper-2);
+  --popover-foreground: var(--ink);
+  --primary: var(--ink);
+  --primary-foreground: var(--paper);
+  --secondary: var(--paper-3);
+  --secondary-foreground: var(--ink);
+  --muted: var(--paper-3);
+  --muted-foreground: var(--ink-mute);
+  --accent: var(--signal);
+  --accent-foreground: var(--paper);
+  --destructive: var(--signal-deep);
+  --border: var(--line);
+  --input: var(--line);
+  --ring: var(--signal);
+  --radius: 0px;
+}
+
+.dark {
+  --background: var(--espresso);
+  --foreground: var(--paper);
+  --card: var(--espresso);
+  --card-foreground: var(--paper);
+  --popover: var(--espresso);
+  --popover-foreground: var(--paper);
+  --primary: var(--paper);
+  --primary-foreground: var(--espresso);
+  --secondary: var(--ink);
+  --secondary-foreground: var(--paper);
+  --muted: var(--ink);
+  --muted-foreground: var(--line);
+  --accent: var(--signal);
+  --accent-foreground: var(--paper);
+  --destructive: var(--signal);
+  --border: rgba(236, 231, 218, 0.16);
+  --input: rgba(236, 231, 218, 0.16);
+  --ring: var(--signal);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-paper text-ink;
+  }
+  html {
+    @apply font-didone;
+  }
+}
+
+@layer utilities {
+  .font-mono-rh {
+    font-family: var(--mono-rh);
+  }
+  .eyebrow {
+    font-family: var(--mono-rh);
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: var(--signal);
+  }
+  .plate {
+    border: 1px solid var(--line);
+    background: var(--paper-2);
+  }
+  .ledger-row {
+    border-bottom: 1px solid var(--line);
+  }
+}

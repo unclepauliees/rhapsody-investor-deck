@@ -1,0 +1,45 @@
+{
+  "base_prompt_template": "{SHOT}. Editorial luxury photography, museum-grade biennale-catalogue restraint, natural or single-source light, muted paper-and-ink palette with at most one small vermilion (#C93A1E) accent, shallow depth, film grain, no text, no logos, no people's faces, generous negative space, 16:9. Absolutely no satellites, rockets, spacecraft, solar panels, antennae, mission-control screens, planet-with-rings, orbit swooshes, star-field wallpaper, or sci-fi rendering; no musical notes, clefs, staves, soundwaves, or instruments; no premium black-and-gold; no generic tech-startup or dashboard look.",
+  "stills_model": "gpt_image_2_5",
+  "video_model": "TBD — not yet tested; spec default candidate: seedance_2_0",
+  "assets": [
+    {
+      "section": "06-solution",
+      "file": "06_solution.webp",
+      "status": "accepted",
+      "model": "gpt_image_2_5",
+      "job_id": "b604d702-f7cb-46f7-8ab2-4803a7e18654",
+      "shot": "Macro of a precision optical instrument in brushed titanium and matte black on white paper — a lens assembly, a machined ring, a hairline vermilion index mark. Reads as a camera, not a spacecraft."
+    },
+    {
+      "section": "09-market",
+      "file": "09_market.webp",
+      "status": "accepted",
+      "model": "gpt_image_2_5",
+      "job_id": "c54045d2-5c59-494e-a099-e4e22a38c84c",
+      "shot": "A couture atelier at night, empty, a single garment on a form under one lamp. Luxury waiting for a new venue.",
+      "note": "First attempt used soul_location and failed the Spine test (cluttered real-world workshop, laptop glow, plastic bins — broke restraint and negative-space rules). Regenerated with gpt_image_2_5; accepted."
+    }
+  ],
+  "pending": [
+    "00-cover (video)",
+    "01-thesis",
+    "02-highlights",
+    "03-why-now",
+    "04-third-movement (video)",
+    "05-problem",
+    "07-session (video)",
+    "08-offer",
+    "10-first-generation",
+    "11-economics",
+    "12-landscape",
+    "13-infrastructure",
+    "14-governance",
+    "15-traction",
+    "16-roadmap (video)",
+    "17-team",
+    "18-ask",
+    "19-close (video)",
+    "appendix"
+  ]
+}
