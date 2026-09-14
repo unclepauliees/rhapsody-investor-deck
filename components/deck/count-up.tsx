@@ -20,12 +20,12 @@ export function CountUp({
 
   useEffect(() => {
     if (!inView) return;
+    // `text` already initialized to `display`, so reduced-motion / no-match
+    // just leave it as-is — nothing to animate.
     if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-      setText(display);
       return;
     }
     if (!match) {
-      setText(display);
       return;
     }
     const [, prefix, numStr, suffix] = match;
