@@ -2,6 +2,8 @@ import { Eyebrow } from "@/components/deck/eyebrow";
 import { SectionShell } from "@/components/deck/section-shell";
 import { StickyMediaSection } from "@/components/vendor/sticky-media-section";
 
+const COLUMNS = ["The Session", "The Residency", "The Master"];
+
 const ROWS: [string, string, string, string][] = [
   ["What it is", "A single, time-locked work in one window", "A seasonal anchor: recurring works across a defined run", "Media rights, authenticated archive, provenance record"],
   ["Who it's for", "A house making a founding statement", "A house building a series; a studio; a label", "Every player — bundled or licensed"],
@@ -22,14 +24,17 @@ export function OfferSection() {
           Moments over mass.
         </h2>
 
-        <div className="mt-10 overflow-x-auto">
-          <table className="w-full min-w-[560px] border-collapse font-mono-rh text-[13px]">
+        {/* Table at sm+; stacked mono ledger per product below sm (spec §08) */}
+        <div className="mt-10 hidden sm:block">
+          <table className="w-full border-collapse font-mono-rh text-[13px]">
             <thead>
               <tr className="border-b border-line text-left text-ink-mute">
                 <th className="w-[140px] py-3 pr-4 font-normal" />
-                <th className="py-3 pr-4 font-normal">The Session</th>
-                <th className="py-3 pr-4 font-normal">The Residency</th>
-                <th className="py-3 font-normal">The Master</th>
+                {COLUMNS.map((c) => (
+                  <th key={c} className="py-3 pr-4 font-normal">
+                    {c}
+                  </th>
+                ))}
               </tr>
             </thead>
             <tbody>
@@ -43,6 +48,22 @@ export function OfferSection() {
               ))}
             </tbody>
           </table>
+        </div>
+
+        <div className="mt-10 space-y-8 sm:hidden">
+          {COLUMNS.map((col, ci) => (
+            <div key={col} className="border-t border-line pt-4">
+              <p className="font-didone text-lg">{col}</p>
+              <div className="mt-2 font-mono-rh text-[13px]">
+                {ROWS.map((row) => (
+                  <div key={row[0]} className="ledger-row py-2.5">
+                    <p className="text-ink-mute">{row[0]}</p>
+                    <p className="mt-0.5 leading-relaxed">{row[ci + 1]}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
 
         <div className="plate mt-10 p-7">

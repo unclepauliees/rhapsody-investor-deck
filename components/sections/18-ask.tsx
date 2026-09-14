@@ -40,11 +40,12 @@ export function AskSection() {
           contracted value. The raise is covered by the first session.
         </p>
 
-        <div className="mt-12 overflow-x-auto">
+        <div className="mt-12">
           <p className="mb-3 font-mono-rh text-[11px] tracking-[0.1em] uppercase text-ink-mute">
             Use of funds
           </p>
-          <table className="w-full min-w-[520px] border-collapse font-mono-rh text-[13px]">
+          {/* Table at sm+; stacked mono ledger below sm (spec §08) */}
+          <table className="hidden w-full border-collapse font-mono-rh text-[13px] sm:table">
             <tbody>
               {USE_OF_FUNDS.map((row) => (
                 <tr key={row[0]} className="border-b border-line-soft align-top">
@@ -55,6 +56,17 @@ export function AskSection() {
               ))}
             </tbody>
           </table>
+          <div className="font-mono-rh text-[13px] sm:hidden">
+            {USE_OF_FUNDS.map((row) => (
+              <div key={row[0]} className="ledger-row py-3">
+                <div className="flex items-baseline justify-between gap-3">
+                  <p className="text-ink-soft">{row[0]}</p>
+                  <p className="shrink-0 text-ink">{row[1]}</p>
+                </div>
+                <p className="mt-1 text-ink-mute">{row[2]}</p>
+              </div>
+            ))}
+          </div>
         </div>
 
         <div className="mt-10 border-t border-line font-mono-rh text-[13px]">
