@@ -28,6 +28,7 @@ export function ThirdMovementSection() {
     <SectionShell id="04-third-movement" index="04">
       <StickyMediaSection
         videoUrl="/media/04_third_movement.mp4"
+        webmUrl="/media/04_third_movement.webm"
         posterUrl="/media/04_third_movement_poster.jpg"
         subheading="[ The Medium ]"
         heading="Media has had two movements. We are writing the third."

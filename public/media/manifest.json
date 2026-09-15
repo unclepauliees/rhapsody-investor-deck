@@ -40,6 +40,15 @@
       "note": "Operator supplied a reference image (/Users/paulestevez_ipx_temp/Downloads/cosmos_134875125_16_9.png) of a literal satellite/spacecraft exterior (visible hull, radiator panels, mechanical hardware) racing over Earth's limb. Declined to use it or replicate the hardware — this is not a trademark issue like the Section 02 case, it's the exact category cliche the deck's entire premise exists to avoid (Spine hard line: no satellites, no spacecraft, no solar panels or antennae, ever). Kept only the kinetic motion-streak and atmospheric-glow mood, stripped of all mechanical/spacecraft content."
     },
     {
+      "section": "04-third-movement",
+      "file": "04_third_movement.mp4 / 04_third_movement.webm",
+      "status": "accepted",
+      "model": "operator-supplied (not generated)",
+      "job_id": null,
+      "shot": "Macro of a camera lens iris/aperture, a subtle rack focus across the glass with faint red light flecks reflecting off the elements.",
+      "note": "Operator-supplied clip (/Users/paulestevez_ipx_temp/Downloads/Camera Vid.mp4), used as-is — not a Higgsfield generation. Re-encoded from source H.264 (3.79MB, 3.47s) to a smaller H.264 (1.78MB) + VP9 WebM (801KB); poster extracted from frame 0. Clip is short (3.47s) and loops via the <video loop> attribute rather than being extended to the spec's usual 8-10s target."
+    },
+    {
       "section": "06-solution",
       "file": "06_solution.webp",
       "status": "accepted",
@@ -58,7 +67,6 @@
     }
   ],
   "pending": [
-    "04-third-movement (video)",
     "05-problem",
     "07-session (video)",
     "08-offer",
