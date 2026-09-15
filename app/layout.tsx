@@ -17,7 +17,7 @@ const spaceMono = Space_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Project Rhapsody — Investor Presentation",
+  title: "Project Rhapsody: Investor Presentation",
   description:
     "Nobody has played this before. Project Rhapsody is the first orbital media studio.",
   robots: { index: false, follow: false },

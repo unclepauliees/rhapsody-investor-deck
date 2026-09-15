@@ -4,7 +4,7 @@ import { StickyMediaSection } from "@/components/vendor/sticky-media-section";
 
 const PILLARS = [
   { name: "The Instrument.", body: "Standard creative envelope, plug-and-play integration, swapped on orbit by robotics. Mastery without the wait." },
-  { name: "The Session.", body: "Sold as a moment — the eclipse crossing, the pass over a named city at first light, the synchronized downlink. Once, and only once." },
+  { name: "The Session.", body: "Sold as a moment: the eclipse crossing, the pass over a named city at first light, the synchronized downlink. Once, and only once." },
   { name: "The Master.", body: "Every take is authenticated at source. The work becomes the master, the catalogue, and the provenance record. Campaigns become on-orbit seasons." },
 ];
 
@@ -25,8 +25,8 @@ export function SolutionSection() {
 
         <p className="mt-8 max-w-[62ch] text-lg leading-relaxed text-ink-soft">
           Rhapsody is a luxury orbital media studio built on a reconfigurable
-          platform. A house brings the work — a camera, a material, a
-          digital canvas — and it drops into the instrument in weeks, not
+          platform. A house brings the work (a camera, a material, a
+          digital canvas) and it drops into the instrument in weeks, not
           years. The studio composes the window, captures the take,
           authenticates the master, and returns the media rights.
         </p>

@@ -6,8 +6,8 @@ const RULES = [
   { name: "Separate entity, separate brand.", body: "No shared identity with the platform partner. Ever." },
   { name: "Segregated data plane.", body: "Every work runs on physically and cryptographically separate networks. Client translation: your session is yours alone." },
   { name: "The curatorial gate.", body: "Every player passes counsel-approved screening before invitation. Selection is the screen." },
-  { name: "Capacity cap.", body: "Anchors limited to 40% of studio capacity — the margin lives in the unrepeatable." },
-  { name: "Language discipline.", body: "The studio speaks in sessions, works, windows, and moments — never in weight or engineering." },
+  { name: "Capacity cap.", body: "Anchors limited to 40% of studio capacity: the margin lives in the unrepeatable." },
+  { name: "Language discipline.", body: "The studio speaks in sessions, works, windows, and moments, never in weight or engineering." },
 ];
 
 export function GovernanceSection() {

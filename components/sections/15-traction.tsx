@@ -23,7 +23,7 @@ export function TractionSection() {
             <p className="mt-2 text-[15px] leading-relaxed text-ink-soft">
               Studio launch announcement,{" "}
               <strong className="text-ink">
-                October 5, 2026 — New York, Advertising Week
+                October 5, 2026, New York, Advertising Week
               </strong>
               . Art Basel Miami VIP days follow in December. Objective: two
               founding works confirmed for the 2028 demonstrator.

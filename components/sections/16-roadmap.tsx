@@ -41,7 +41,7 @@ export function RoadmapSection() {
         </div>
 
         <p className="mt-10 max-w-[62ch] font-didone italic text-xl">
-          We launch grounded and hardware-true — and grow into something
+          We launch grounded and hardware-true, and grow into something
           larger only once the work earns it.
         </p>
       </StickyMediaSection>

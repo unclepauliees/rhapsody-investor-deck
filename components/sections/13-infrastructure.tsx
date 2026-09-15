@@ -27,7 +27,7 @@ export function InfrastructureSection() {
           Project Rhapsody is a subsidiary of{" "}
           <strong className="font-semibold text-ink">Symphony Space</strong>,
           an orbital infrastructure company building reconfigurable,
-          serviceable platforms — with a secured launch slot and signed
+          serviceable platforms, with a secured launch slot and signed
           demand from sovereign, commercial, and hyperscale customers before
           first flight. The studio operates as a separate entity on that
           platform: the orbit is booked, the hardware is funded, and
@@ -48,12 +48,12 @@ export function InfrastructureSection() {
 
         <p className="mt-8 max-w-[62ch] text-[15px] leading-relaxed text-ink-soft">
           Every customer the parent signs is a Rhapsody creative-services
-          lead — mission storytelling, launch media, communications. The
+          lead: mission storytelling, launch media, communications. The
           studio earns before the first work flies.
         </p>
 
         <p className="mt-6 max-w-[62ch] font-mono-rh text-[11px] leading-relaxed tracking-[0.02em] text-ink-mute">
-          Rhapsody is carried in the parent&rsquo;s model as upside — not
+          Rhapsody is carried in the parent&rsquo;s model as upside, not
           base case. The studio&rsquo;s economics sit on top of an
           already-funded asset.
         </p>

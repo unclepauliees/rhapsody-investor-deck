@@ -4,14 +4,14 @@ import { StickyMediaSection } from "@/components/vendor/sticky-media-section";
 
 const COLUMNS = [
   { name: "Terrestrial spectacle.", body: "The gala, the pavilion, the desert runway. Proven, crowded, repeatable. Every rival has done it." },
-  { name: "Space stunts.", body: "One-off launches and product shots. Novelty without a medium — no rights, no series, no second act." },
+  { name: "Space stunts.", body: "One-off launches and product shots. Novelty without a medium: no rights, no series, no second act." },
   { name: "Hosted-payload operators.", body: "Sell kilograms to engineers. No creative envelope, no curation, no media practice." },
 ];
 
 const MOAT = [
-  "Booked orbit on a reconfigurable platform — the only one that swaps on orbit.",
+  "Booked orbit on a reconfigurable platform: the only one that swaps on orbit.",
   "A creative standard that integrates in weeks.",
-  "Curatorial selection as the gate — scarcity by design.",
+  "Curatorial selection as the gate: scarcity by design.",
   "Provenance: the authenticated master as the asset.",
 ];
 

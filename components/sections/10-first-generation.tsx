@@ -20,7 +20,7 @@ export function FirstGenerationSection() {
 
         <p className="mt-8 max-w-[62ch] text-lg leading-relaxed text-ink-soft">
           The houses, artists, and studios who would rather found a medium
-          than buy a billboard — and who understand that a place in an
+          than buy a billboard, and who understand that a place in an
           origin story outlasts any campaign.
         </p>
 

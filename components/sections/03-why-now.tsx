@@ -5,15 +5,15 @@ import { StickyMediaSection } from "@/components/vendor/sticky-media-section";
 const SHIFTS = [
   {
     n: "01",
-    body: "Generative abundance collapsed the value of the image. When any campaign can be prompted in seconds, the asset a house pays for is no longer the picture — it is the proof that a real thing happened, once, somewhere no one else could go.",
+    body: "Generative abundance collapsed the value of the image. When any campaign can be prompted in seconds, the asset a house pays for is no longer the picture: it is the proof that a real thing happened, once, somewhere no one else could go.",
   },
   {
     n: "02",
-    body: "Luxury ran out of altitude. Every terrestrial venue has been used — the museum steps, the desert, the runway on ice. Cultural capital now comes from founding moments, not attending them. The budget line is the pavilion, not the placement.",
+    body: "Luxury ran out of altitude. Every terrestrial venue has been used: the museum steps, the desert, the runway on ice. Cultural capital now comes from founding moments, not attending them. The budget line is the pavilion, not the placement.",
   },
   {
     n: "03",
-    body: "Orbit became reconfigurable. For the first time, a platform can host a creative work, swap it, and host the next — on the timeline of a season, not a decade.",
+    body: "Orbit became reconfigurable. For the first time, a platform can host a creative work, swap it, and host the next, on the timeline of a season, not a decade.",
   },
 ];
 

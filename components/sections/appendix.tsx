@@ -21,7 +21,7 @@ const RISKS = [
   {
     n: "03",
     title: "No Founding Director yet.",
-    body: "The team slide is now strong on orbit, capture, communications, and capital — but the studio still has no named curatorial or creative lead. Slide 18 funds the seat; say so out loud in the room rather than let them find the gap.",
+    body: "The team slide is now strong on orbit, capture, communications, and capital, but the studio still has no named curatorial or creative lead. Slide 18 funds the seat; say so out loud in the room rather than let them find the gap.",
   },
   {
     n: "04",
@@ -51,7 +51,7 @@ const RISKS = [
   {
     n: "09",
     title: "Codename in a live raise.",
-    body: "Fine with the footnote — as long as the emblem is on every slide so a name change mid-round doesn't break continuity.",
+    body: "Fine with the footnote, as long as the emblem is on every slide so a name change mid-round doesn't break continuity.",
   },
   {
     n: "10",
@@ -61,7 +61,7 @@ const RISKS = [
   {
     n: "11",
     title: "Studio Services is the firewall's stress test.",
-    body: "The parent's client book is sovereign, defense, and IC-adjacent. If the Rhapsody name produces mission media for a defense customer, the “no aerospace or defense association” rule is broken by the studio's own revenue line. Guardrails, stated in the deck: (a) every Studio Services engagement passes the same counsel gate as a Session; (b) defense and government work is delivered unbranded or under a services mark, never under the Rhapsody name; (c) Services is capped — it is the floor, and the moment it competes with Sessions for capacity or attention, the studio is a production vendor, not a medium.",
+    body: "The parent's client book is sovereign, defense, and IC-adjacent. If the Rhapsody name produces mission media for a defense customer, the “no aerospace or defense association” rule is broken by the studio's own revenue line. Guardrails, stated in the deck: (a) every Studio Services engagement passes the same counsel gate as a Session; (b) defense and government work is delivered unbranded or under a services mark, never under the Rhapsody name; (c) Services is capped: it is the floor, and the moment it competes with Sessions for capacity or attention, the studio is a production vendor, not a medium.",
   },
 ];
 
@@ -83,8 +83,8 @@ export function AppendixSection() {
               <p className="text-[15px] leading-relaxed text-ink-soft">
                 Full contribution trajectory and capacity share, presented
                 as capacity-derived and explicitly labeled a{" "}
-                <em className="font-didone not-italic italic">scenario</em>{" "}
-                — carried in the parent&rsquo;s model as upside, not base
+                <em className="font-didone not-italic italic">scenario</em>,
+                carried in the parent&rsquo;s model as upside, not base
                 case (see Slide 11).
               </p>
               <div className="mt-5 border-t border-line-soft font-mono-rh text-[13px]">
@@ -101,7 +101,7 @@ export function AppendixSection() {
               </div>
               <p className="mt-4 font-mono-rh text-[11px] leading-relaxed text-ink-mute">
                 Interpolated 2030–2033 line items are not specified in the
-                locked copy — populate from the parent&rsquo;s model before
+                locked copy: populate from the parent&rsquo;s model before
                 send rather than infer intermediate figures here.
               </p>
             </AccordionContent>
@@ -114,14 +114,14 @@ export function AppendixSection() {
             <AccordionContent className="pb-6">
               <p className="text-[15px] leading-relaxed text-ink-soft">
                 The only place a $/kg comparison appears in this deck,
-                framed as commodity rate vs. studio rate — Mass Silence
+                framed as commodity rate vs. studio rate; Mass Silence
                 applies everywhere else (see Slide 14, rule 5).
               </p>
               <div className="mt-5 border-t border-line-soft font-mono-rh text-[13px]">
                 <div className="ledger-row grid grid-cols-[180px_1fr] gap-4 py-3">
                   <span className="text-ink-mute">Commodity rate</span>
                   <span className="text-ink-soft">
-                    [ TK — $/kg figure from data room; not specified in
+                    [ TK: $/kg figure from data room; not specified in
                     locked copy ]
                   </span>
                 </div>
@@ -156,7 +156,7 @@ export function AppendixSection() {
                 <div className="grid grid-cols-[180px_1fr] gap-4 py-3">
                   <span className="text-ink-mute">Shortlist / ruled-out</span>
                   <span className="text-ink-soft">
-                    [ TK — trademark counsel to populate before send ]
+                    [ TK: trademark counsel to populate before send ]
                   </span>
                 </div>
               </div>
@@ -171,7 +171,7 @@ export function AppendixSection() {
               <p>
                 <strong className="text-ink">Entity structure.</strong>{" "}
                 Rhapsody is architected as a separate entity and brand from
-                the platform partner — no shared identity, ever (Slide 14,
+                the platform partner, no shared identity, ever (Slide 14,
                 rule 1).
               </p>
               <p>
@@ -183,8 +183,8 @@ export function AppendixSection() {
               </p>
               <p>
                 <strong className="text-ink">Screening process.</strong>{" "}
-                Every player — Session client or Studio Services client
-                alike — passes counsel-approved screening before invitation
+                Every player (Session client or Studio Services client
+                alike) passes counsel-approved screening before invitation
                 or engagement (Slide 14, rule 3; Risk 11).
               </p>
             </AccordionContent>

@@ -64,7 +64,7 @@ export function TeamSection() {
           </p>
           <p className="mt-2 font-mono-rh text-[13px] leading-relaxed text-ink-soft">
             National security · Commercial space · Civil space ·
-            International markets — via the parent&rsquo;s advisory board.
+            International markets, via the parent&rsquo;s advisory board.
           </p>
         </div>
       </StickyMediaSection>

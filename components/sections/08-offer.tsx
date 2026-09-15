@@ -6,7 +6,7 @@ const COLUMNS = ["The Session", "The Residency", "The Master"];
 
 const ROWS: [string, string, string, string][] = [
   ["What it is", "A single, time-locked work in one window", "A seasonal anchor: recurring works across a defined run", "Media rights, authenticated archive, provenance record"],
-  ["Who it's for", "A house making a founding statement", "A house building a series; a studio; a label", "Every player — bundled or licensed"],
+  ["Who it's for", "A house making a founding statement", "A house building a series; a studio; a label", "Every player, bundled or licensed"],
   ["Pricing basis", "Per work, per window", "Per season, capped at 40% of studio capacity", "Rights & licensing"],
   ["Indicative", "$500K–$2M", "Negotiated, premium to Session", "Included / licensed"],
 ];
@@ -68,11 +68,11 @@ export function OfferSection() {
 
         <div className="plate mt-10 p-7">
           <p className="font-mono-rh text-[11px] tracking-[0.1em] text-signal">
-            Fourth line — Studio Services
+            Fourth line: Studio Services
           </p>
           <p className="mt-3 max-w-[62ch] text-[15px] leading-relaxed text-ink-soft">
             Content production and creative services for the platform&rsquo;s
-            own customers — mission storytelling, launch media, brand and
+            own customers: mission storytelling, launch media, brand and
             communications work for sovereign, commercial, and hyperscale
             clients already on contract with the parent. Warm demand, no
             acquisition cost, and the studio&rsquo;s production muscle stays

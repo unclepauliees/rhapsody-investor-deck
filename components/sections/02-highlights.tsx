@@ -24,12 +24,12 @@ const TILES = [
   {
     n: "04",
     title: "Moments-over-mass economics.",
-    body: "We price the take, not the tonnage: $500K–$2M per work, 90%+ contribution on the platform's marginal capacity — plus a second line: creative services to the parent's existing client book, at zero acquisition cost.",
+    body: "We price the take, not the tonnage: $500K–$2M per work, 90%+ contribution on the platform's marginal capacity, plus a second line: creative services to the parent's existing client book, at zero acquisition cost.",
   },
   {
     n: "05",
     title: "Curation is the moat.",
-    body: "Invitation-only access, governed by a counsel-approved gate. Being chosen is the status — and the screen keeps the entity clean.",
+    body: "Invitation-only access, governed by a counsel-approved gate. Being chosen is the status, and the screen keeps the entity clean.",
   },
   {
     n: "06",

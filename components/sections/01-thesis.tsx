@@ -23,7 +23,7 @@ export function ThesisSection() {
           <p>
             Every medium is defined by the physics of where it is made.
             Broadcast was invented in a studio. Social was invented in a
-            feed. The next one gets invented in orbit — and it hasn&rsquo;t
+            feed. The next one gets invented in orbit, and it hasn&rsquo;t
             been invented yet.
           </p>
           <p>

@@ -4,10 +4,10 @@ import { SectionShell } from "@/components/deck/section-shell";
 import { StickyMediaSection } from "@/components/vendor/sticky-media-section";
 
 const USE_OF_FUNDS: [string, string, string][] = [
-  ["Founding team · 18 months", "$400K", "40% — Founding Director, producer, curatorial lead"],
-  ["Studio launch & first-generation acquisition", "$250K", "25% — October 5 New York, Art Basel Miami, founding-voice commissions"],
-  ["Creative envelope & integration", "$150K", "15% — the standard instrument kit for the first two works"],
-  ["Entity, trademark, rights framework", "$120K", "12% — clearance in classes 35/38/41, media-rights architecture, counsel gate"],
+  ["Founding team · 18 months", "$400K", "40%: Founding Director, producer, curatorial lead"],
+  ["Studio launch & first-generation acquisition", "$250K", "25%: October 5 New York, Art Basel Miami, founding-voice commissions"],
+  ["Creative envelope & integration", "$150K", "15%: the standard instrument kit for the first two works"],
+  ["Entity, trademark, rights framework", "$120K", "12%: clearance in classes 35/38/41, media-rights architecture, counsel gate"],
   ["Reserve", "$80K", "8%"],
 ];
 

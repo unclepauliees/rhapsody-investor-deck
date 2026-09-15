@@ -3,9 +3,9 @@ import { SectionShell } from "@/components/deck/section-shell";
 import { StickyMediaSection } from "@/components/vendor/sticky-media-section";
 
 const RINGS = [
-  { name: "Core", body: "Luxury houses & maisons — fashion, fragrance, spirits, horology, beauty." },
-  { name: "Adjacent", body: "Film, music, and talent — the artists who found movements." },
-  { name: "Frontier", body: "Institutions & collectors — museums, biennales, foundations commissioning the first works of a medium." },
+  { name: "Core", body: "Luxury houses & maisons: fashion, fragrance, spirits, horology, beauty." },
+  { name: "Adjacent", body: "Film, music, and talent: the artists who found movements." },
+  { name: "Frontier", body: "Institutions & collectors: museums, biennales, foundations commissioning the first works of a medium." },
 ];
 
 export function MarketSection() {

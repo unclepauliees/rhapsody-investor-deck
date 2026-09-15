@@ -23,7 +23,7 @@ export function ProblemSection() {
 
         <div className="mt-8 max-w-[62ch] space-y-4 text-lg leading-relaxed text-ink-soft">
           <p>
-            Every brand moment in orbit to date has been a one-off — a
+            Every brand moment in orbit to date has been a one-off: a
             product photographed against the void, a single launch, a press
             cycle. No instrument. No repeatability. No rights. No medium.
           </p>

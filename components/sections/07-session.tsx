@@ -7,7 +7,7 @@ import { StickyMediaSection } from "@/components/vendor/sticky-media-section";
 
 const STEPS = [
   { n: "01", name: "The Invitation.", body: "Curatorial selection. Every player passes the studio's counsel-approved gate before an invitation is extended. Access is the first luxury." },
-  { n: "02", name: "The Composition.", body: "The house and the studio design the work and choose the window — pass, light, city, moment." },
+  { n: "02", name: "The Composition.", body: "The house and the studio design the work and choose the window: pass, light, city, moment." },
   { n: "03", name: "The Integration.", body: "The work is delivered in the standard creative envelope and integrated in weeks." },
   { n: "04", name: "The Take.", body: "The window opens. The take happens once. It cannot be re-run, re-shot, or generated after the fact." },
   { n: "05", name: "The Master.", body: "Authenticated, downlinked on a segregated plane, archived. Rights are returned. The next work is swapped in." },
