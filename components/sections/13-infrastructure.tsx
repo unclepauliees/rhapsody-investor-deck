@@ -24,14 +24,13 @@ export function InfrastructureSection() {
         </h2>
 
         <p className="mt-8 max-w-[62ch] text-lg leading-relaxed text-ink-soft">
-          Project Rhapsody is a subsidiary of{" "}
-          <strong className="font-semibold text-ink">Symphony Space</strong>,
-          an orbital infrastructure company building reconfigurable,
+          The studio is a <strong className="font-semibold text-ink">Symphony Space</strong>{" "}
+          program operating on Symphony&rsquo;s platforms. Symphony is
+          building reconfigurable,
           serviceable platforms, with a secured launch slot and signed
           demand from sovereign, commercial, and hyperscale customers before
-          first flight. The studio operates as a separate entity on that
-          platform: the orbit is booked, the hardware is funded, and
-          Rhapsody&rsquo;s economics are additive.
+          first flight. Rhapsody develops creative engagements on those
+          platforms; all program revenue books to Symphony Space.
         </p>
 
         <div className="mt-10 border-t border-line font-mono-rh text-[13px]">
@@ -47,15 +46,17 @@ export function InfrastructureSection() {
         </div>
 
         <p className="mt-8 max-w-[62ch] text-[15px] leading-relaxed text-ink-soft">
-          Every customer the parent signs is a Rhapsody creative-services
+          Every customer Symphony signs is a potential Rhapsody creative-services
           lead: mission storytelling, launch media, communications. The
-          studio earns before the first work flies.
+          program can support Symphony&rsquo;s customer relationships before
+          the first work flies.
         </p>
 
         <p className="mt-6 max-w-[62ch] font-mono-rh text-[11px] leading-relaxed tracking-[0.02em] text-ink-mute">
-          Rhapsody is carried in the parent&rsquo;s model as upside, not
-          base case. The studio&rsquo;s economics sit on top of an
-          already-funded asset.
+          Rhapsody is not a separate legal entity and does not issue equity
+          or raise capital independently. Its program budget is funded from
+          Symphony&rsquo;s Seed; brand and advertising revenue begins in
+          Symphony&rsquo;s model in 2029.
         </p>
       </StickyMediaSection>
     </SectionShell>

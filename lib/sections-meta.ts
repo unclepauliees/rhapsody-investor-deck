@@ -22,8 +22,8 @@ export const SECTIONS: SectionMeta[] = [
   { id: "14-governance", index: "14", label: "Governance" },
   { id: "15-traction", index: "15", label: "Traction" },
   { id: "16-roadmap", index: "16", label: "Roadmap" },
-  { id: "17-team", index: "17", label: "Team" },
-  { id: "18-ask", index: "18", label: "The Ask" },
+  { id: "17-team", index: "17", label: "Team & Partners" },
+  { id: "18-ask", index: "18", label: "The Plan" },
   { id: "19-close", index: "19", label: "Close" },
   { id: "appendix", index: "A", label: "Appendix" },
 ];

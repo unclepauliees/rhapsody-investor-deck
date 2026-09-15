@@ -4,7 +4,7 @@ import { StickyMediaSection } from "@/components/vendor/sticky-media-section";
 
 const PHASES = [
   { k: "Now", name: "The Instrument (2026–2028).", body: "Open the studio. Clear the name. Invite the first generation. Fly the first two works on the demonstrator." },
-  { k: "Next", name: "First Light (2028–2029).", body: "Deliver the first masters. Open Residencies on the commercial platform. Stand up the independent P&L." },
+  { k: "Next", name: "First Light (2028–2029).", body: "Deliver the first masters. Open Residencies on the commercial platform. Track program performance within Symphony's financials, with modeled brand and advertising revenue starting in 2029." },
   { k: "Then", name: "The Movement (2029+).", body: "The studio becomes a school; the catalogue becomes a canon; the brand becomes a named medium. Origin, never nationalism." },
 ];
 

@@ -23,13 +23,13 @@ const TILES = [
   },
   {
     n: "04",
-    title: "Moments-over-mass economics.",
-    body: "We price the take, not the tonnage: $500K–$2M per work, 90%+ contribution on the platform's marginal capacity, plus a second line: creative services to the parent's existing client book, at zero acquisition cost.",
+    title: "Premium creative engagements.",
+    body: "Symphony models brand and advertising capacity at roughly $30,000 per kg per month: 4.6× its weighted-average subscription rate or 7.5× its Long-Term Plan rate. Pricing scales with mass and volume; revenue books to Symphony.",
   },
   {
     n: "05",
     title: "Curation is the moat.",
-    body: "Invitation-only access, governed by a counsel-approved gate. Being chosen is the status, and the screen keeps the entity clean.",
+    body: "Invitation-only access, governed by a counsel-approved gate. Being chosen is the status, and screening protects the program's brand and partners.",
   },
   {
     n: "06",

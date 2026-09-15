@@ -14,7 +14,7 @@ export function FooterStrip({
       }`}
     >
       <span>Project Rhapsody</span>
-      <span className="hidden sm:inline">Investor Presentation</span>
+      <span className="hidden sm:inline">Program Overview</span>
       <span>Confidential</span>
       <span>{index} / 19</span>
     </div>

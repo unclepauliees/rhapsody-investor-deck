@@ -3,11 +3,11 @@ import { SectionShell } from "@/components/deck/section-shell";
 import { StickyMediaSection } from "@/components/vendor/sticky-media-section";
 
 const RULES = [
-  { name: "Separate entity, separate brand.", body: "No shared identity with the platform partner. Ever." },
+  { name: "Separate brand, segregated data plane.", body: "A distinct creative identity within Symphony Space, with separation of program data from other platform operations. Brand and data separation, not a separate legal entity." },
   { name: "Segregated data plane.", body: "Every work runs on physically and cryptographically separate networks. Client translation: your session is yours alone." },
   { name: "The curatorial gate.", body: "Every player passes counsel-approved screening before invitation. Selection is the screen." },
   { name: "Capacity cap.", body: "Anchors limited to 40% of studio capacity: the margin lives in the unrepeatable." },
-  { name: "Language discipline.", body: "The studio speaks in sessions, works, windows, and moments, never in weight or engineering." },
+  { name: "Language discipline.", body: "The creative offer speaks in sessions, works, windows, and moments. Pricing and financial disclosures state the mass, volume, and model assumptions explicitly." },
 ];
 
 export function GovernanceSection() {
@@ -26,10 +26,10 @@ export function GovernanceSection() {
         </h2>
 
         <p className="mt-8 max-w-[62ch] text-lg leading-relaxed text-ink-soft">
-          Investors should read the firewall as risk reduction, not
-          constraint. The studio is architected as a distinct entity so that
-          creative work and regulated missions never share a name, a
-          network, or a room.
+          Rhapsody&rsquo;s governance is built around brand and data
+          separation within Symphony Space. Creative work has a distinct
+          identity and segregated data plane; this is an operational
+          framework, not a claim of legal separation.
         </p>
 
         <ol className="mt-10 border-t border-line font-mono-rh text-[13px]">
@@ -49,7 +49,7 @@ export function GovernanceSection() {
         </ol>
 
         <p className="mt-10 font-didone italic text-xl">
-          Clean lines make a clean exit.
+          Clear boundaries protect the work.
         </p>
       </StickyMediaSection>
     </SectionShell>

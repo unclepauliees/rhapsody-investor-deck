@@ -1,6 +1,6 @@
-# Project Rhapsody — Investor Presentation
+# Project Rhapsody — Program Overview
 
-Single-page, scroll-driven investor deck for Project Rhapsody: a scroll-locked
+Single-page, scroll-driven program overview for Project Rhapsody: a scroll-locked
 hero + 19 numbered slides + appendix, built in Next.js (App Router) +
 TypeScript + Tailwind v4 + shadcn/ui, on the locked Rhapsody Brand OS v2
 tokens (`app/globals.css`).

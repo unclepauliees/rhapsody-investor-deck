@@ -35,7 +35,7 @@ export function ThesisSection() {
         </div>
 
         <div className="mt-14 grid grid-cols-1 gap-8 border-t border-line-soft pt-8 sm:grid-cols-3">
-          <Stat value="10–40×" label="premium over commodity orbital capacity, per work" />
+          <Stat value="4.6–7.5×" label="Symphony's subscription rates: 4.6× weighted average; 7.5× Long-Term Plan" />
           <Stat value="April 2028" label="first works fly on a demonstrator with a secured launch slot" />
           <Stat value="$60B" label="luxury brand & media opportunity opening 2030–2035" />
         </div>

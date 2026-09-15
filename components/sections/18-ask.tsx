@@ -6,14 +6,14 @@ const USE_OF_FUNDS: [string, string, string][] = [
   ["Founding team · 18 months", "$400K", "40%: Founding Director, producer, curatorial lead"],
   ["Studio launch & first-generation acquisition", "$250K", "25%: October 5 New York, Art Basel Miami, founding-voice commissions"],
   ["Creative envelope & integration", "$150K", "15%: the standard instrument kit for the first two works"],
-  ["Entity, trademark, rights framework", "$120K", "12%: clearance in classes 35/38/41, media-rights architecture, counsel gate"],
+  ["Program governance, trademark & rights", "$120K", "12%: clearance in classes 35/38/41, media-rights architecture, counsel gate"],
   ["Reserve", "$80K", "8%"],
 ];
 
 const MILESTONES = [
   { date: "Oct 2026", body: "Studio launched, New York" },
-  { date: "Q1 2027", body: "Name cleared; entity formed; Founding Director in seat" },
-  { date: "Q2 2027", body: "Two founding works contracted for the demonstrator" },
+  { date: "Q1 2027", body: "Name cleared; program governance in place; Founding Director in seat" },
+  { date: "Q2 2027", body: "Target: contract two founding works for the demonstrator" },
   { date: "Apr 2028", body: "First works fly" },
 ];
 
@@ -24,21 +24,28 @@ export function AskSection() {
         videoUrl="/media/18_ask.mp4"
         webmUrl="/media/18_ask.webm"
         posterUrl="/media/18_ask_poster.jpg"
-        subheading="[ The Ask ]"
-        heading="$1M to open the studio and fly the first two works."
+        subheading="[ The Plan ]"
+        heading="What $1M builds."
       >
-        <Eyebrow>[ The Ask ]</Eyebrow>
+        <Eyebrow>[ The Plan ]</Eyebrow>
         <h2 className="max-w-[62ch] font-didone text-[clamp(28px,3.8vw,44px)] leading-[1.1]">
-          $1M to open the studio and fly the first two
-          works.
+          What $1M builds.
         </h2>
         <p className="mt-3 font-mono-rh text-[11px] tracking-[0.12em] uppercase text-ink-mute">
-          Pre-seed · Project Rhapsody, a subsidiary of Symphony Space
+          Program budget · Funded from Symphony Space&rsquo;s Seed
         </p>
 
         <p className="mt-8 max-w-[62ch] font-didone text-2xl leading-snug">
-          Two founding works on the 2028 demonstrator carry $1M–$4M in
-          contracted value. The raise is covered by the first session.
+          A $1M program budget to open the studio and prepare the first two
+          works. We are pursuing $1M–$4M in total contracted value for two
+          founding works on the 2028 demonstrator: a commercial target,
+          not secured contracts or modeled 2028 revenue.
+        </p>
+        <p className="mt-4 max-w-[62ch] text-[15px] leading-relaxed text-ink-soft">
+          Symphony&rsquo;s current model includes $1.075M of licensing and
+          consulting revenue in 2028 and no brand and advertising revenue
+          until 2029. Rhapsody does not raise independently or issue equity;
+          all program revenue books to Symphony.
         </p>
 
         <div className="mt-12">
@@ -72,7 +79,7 @@ export function AskSection() {
 
         <div className="mt-10 border-t border-line font-mono-rh text-[13px]">
           <p className="mb-1 mt-4 font-mono-rh text-[11px] tracking-[0.1em] uppercase text-ink-mute">
-            Milestones this round buys
+            Planned program milestones
           </p>
           {MILESTONES.map((m) => (
             <div

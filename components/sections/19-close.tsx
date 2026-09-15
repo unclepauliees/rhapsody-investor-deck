@@ -33,7 +33,11 @@ export function CloseSection() {
             Project Rhapsody · Orbital Media Studio
           </p>
           <p className="font-mono-rh text-[11px] tracking-[0.14em] uppercase text-paper/55">
-            [name] · [email] · New York · Orbit
+            Merry Walker ·{" "}
+            <a href="mailto:merry@symphony-space.com" className="break-all underline underline-offset-4 hover:text-paper">
+              merry@symphony-space.com
+            </a>{" "}
+            · New York · Orbit
           </p>
         </div>
       </div>

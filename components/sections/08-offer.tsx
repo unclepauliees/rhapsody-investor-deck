@@ -7,8 +7,8 @@ const COLUMNS = ["The Session", "The Residency", "The Master"];
 const ROWS: [string, string, string, string][] = [
   ["What it is", "A single, time-locked work in one window", "A seasonal anchor: recurring works across a defined run", "Media rights, authenticated archive, provenance record"],
   ["Who it's for", "A house making a founding statement", "A house building a series; a studio; a label", "Every player, bundled or licensed"],
-  ["Pricing basis", "Per work, per window", "Per season, capped at 40% of studio capacity", "Rights & licensing"],
-  ["Indicative", "$500K–$2M", "Negotiated, premium to Session", "Included / licensed"],
+  ["Pricing basis", "Roughly one-month engagements; mass and volume dependent", "Per season, capped at 40% of studio capacity", "Rights & licensing"],
+  ["Indicative", "Approx. $30,000/kg/month capacity rate", "Negotiated for scope and duration", "Included / licensed"],
 ];
 
 export function OfferSection() {
@@ -68,22 +68,23 @@ export function OfferSection() {
 
         <div className="plate mt-10 p-7">
           <p className="font-mono-rh text-[11px] tracking-[0.1em] text-signal">
-            Fourth line: Studio Services
+            Complementary offering: Studio Services
           </p>
           <p className="mt-3 max-w-[62ch] text-[15px] leading-relaxed text-ink-soft">
             Content production and creative services for the platform&rsquo;s
             own customers: mission storytelling, launch media, brand and
             communications work for sovereign, commercial, and hyperscale
-            clients already on contract with the parent. Warm demand, no
-            acquisition cost, and the studio&rsquo;s production muscle stays
-            exercised between sessions.
+            clients already on contract with Symphony Space. These services
+            extend existing customer relationships and keep the program&rsquo;s
+            production capability active between sessions. Revenue books to Symphony.
           </p>
         </div>
 
         <p className="mt-8 max-w-[62ch] font-mono-rh text-[12px] leading-relaxed tracking-[0.02em] text-ink-mute">
-          Spot sessions carry the margin. The premium is the unrepeatable.
-          Long-term anchors are capped so the studio never becomes inventory.
-          Studio Services is the floor; Sessions are the ceiling.
+          Capacity pricing is an estimate, scaling with mass and volume:
+          larger or heavier works cost more; smaller or lighter works cost less.
+          Engagements are typically about one month and non-recurring.
+          Long-term anchors remain capped to preserve space for individual works.
         </p>
       </StickyMediaSection>
     </SectionShell>

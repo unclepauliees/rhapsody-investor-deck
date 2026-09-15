@@ -1,68 +1,18 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
 import { Eyebrow } from "@/components/deck/eyebrow";
 import { SectionShell } from "@/components/deck/section-shell";
 
 const RISKS = [
-  {
-    n: "01",
-    title: "The parent's own deck undercuts this one.",
-    body: "Symphony's seed deck carries Rhapsody as “upside, not base case.” A crossover investor will ask why a side bet needs its own raise. Answer lives on Slides 13 and 18: additive economics on an already-funded asset, and a $1M raise covered by the first session. If that isn't crisp, the deck is a brochure.",
-  },
-  {
-    n: "02",
-    title: "$2.9B by 2034 is an optics liability.",
-    body: "It exceeds the parent's entire core revenue. It stays in the appendix as a scenario; one work's economics is the hero.",
-  },
-  {
-    n: "03",
-    title: "No Founding Director yet.",
-    body: "The team slide is now strong on orbit, capture, communications, and capital, but the studio still has no named curatorial or creative lead. Slide 18 funds the seat; say so out loud in the room rather than let them find the gap.",
-  },
-  {
-    n: "04",
-    title: "ORBES is either the capture partner or the perceived competitor.",
-    body: "Anna's product is literally a camera in orbit. Declare the relationship on the slide (partner / advisor / capture supplier) so no one reads it as a conflict.",
-  },
-  {
-    n: "05",
-    title: "“First” claims will be challenged.",
-    body: "Products have been photographed in orbit before. We never say “first media in space.” We say first instrument, first studio, first medium. Wording is load-bearing everywhere.",
-  },
-  {
-    n: "06",
-    title: "Space-billboard backlash.",
-    body: "Orbital advertising has a hostile public history (astronomy community, dark-sky advocacy, “commercializing the sky”). Rhapsody's stance must be explicit in the deck or Q&A: nothing is projected at Earth; the work is made in orbit and shown on Earth. Media rights, not sky billboards.",
-  },
-  {
-    n: "07",
-    title: "Subco disclosure vs. visual firewall.",
-    body: "Naming Symphony Space is fine; the moment a parent logo, colorway, or orbit diagram appears in this deck, the brand collision the whole project exists to avoid is on screen. Words only.",
-  },
-  {
-    n: "08",
-    title: "Pipeline slide is thin.",
-    body: "Verticals “in development” is not traction. Two houses under NDA before October 5 or Slide 15 reads as a plan, not proof.",
-  },
-  {
-    n: "09",
-    title: "Codename in a live raise.",
-    body: "Fine with the footnote, as long as the emblem is on every slide so a name change mid-round doesn't break continuity.",
-  },
-  {
-    n: "10",
-    title: "Firewall vs. diligence.",
-    body: "Investors will want the platform's engineering. Data room, not deck. The deck stays museum-grade.",
-  },
-  {
-    n: "11",
-    title: "Studio Services is the firewall's stress test.",
-    body: "The parent's client book is sovereign, defense, and IC-adjacent. If the Rhapsody name produces mission media for a defense customer, the “no aerospace or defense association” rule is broken by the studio's own revenue line. Guardrails, stated in the deck: (a) every Studio Services engagement passes the same counsel gate as a Session; (b) defense and government work is delivered unbranded or under a services mark, never under the Rhapsody name; (c) Services is capped: it is the floor, and the moment it competes with Sessions for capacity or attention, the studio is a production vendor, not a medium.",
-  },
+  { title: "Program structure and funding", body: "Rhapsody is a Symphony Space program, not a separate legal entity. It does not issue equity or raise independently. The $1M plan is a program budget funded from Symphony's Seed, and revenue books to Symphony." },
+  { title: "Targets and modeled revenue", body: "The $1M–$4M target for two founding demonstrator works is not secured contracted value or modeled 2028 revenue. The current model starts brand and advertising revenue in 2029; commercial targets remain subject to contracting and delivery." },
+  { title: "Creative leadership", body: "The program budget includes a Founding Director, producer, and curatorial lead. These are planned program roles, not current officers of a separate Rhapsody entity." },
+  { title: "Capture partnership", body: "ORBES is Symphony's orbital capture and video partner. Anna Shaposhnik is Founder & CEO of ORBES, not a Rhapsody co-founder." },
+  { title: "First claims", body: "Products have been photographed in orbit before. The program's positioning concerns the studio, instrument, and creative medium, not a claim of the first media made in space." },
+  { title: "Public perception", body: "Nothing is projected at Earth. Work is made in orbit and shown on Earth: media rights and creative production, not sky billboards." },
+  { title: "Brand and data separation", body: "Rhapsody maintains a distinct creative identity and segregated data plane within Symphony. This governance framework does not constitute legal-entity separation." },
+  { title: "Pipeline maturity", body: "Verticals in development and planned founding works are not signed contracts. Pipeline progress must be distinguished from confirmed commercial commitments." },
+  { title: "Working codename", body: "Project Rhapsody remains a working codename pending trademark clearance. The emblem provides continuity if the name changes." },
+  { title: "Platform diligence", body: "Platform engineering and financial diligence belong with Symphony Space. The program overview complements Symphony's Seed materials." },
+  { title: "Studio Services screening", body: "Studio Services engagements pass the same counsel-approved screening as Sessions. Defense and government work is delivered unbranded or under a services mark, not under the Rhapsody name. Services must not displace the program's core creative work." },
 ];
 
 export function AppendixSection() {
@@ -70,153 +20,76 @@ export function AppendixSection() {
     <SectionShell id="appendix" index="A">
       <div className="mx-auto max-w-4xl px-6 py-24 sm:px-10">
         <Eyebrow>[ Appendix ]</Eyebrow>
-        <h2 className="max-w-[62ch] font-didone text-[clamp(26px,3.4vw,40px)] leading-[1.12]">
-          The record.
-        </h2>
+        <h2 className="font-didone text-[clamp(26px,3.4vw,40px)] leading-[1.12]">The record.</h2>
 
-        <Accordion multiple className="mt-12 border-t border-line">
-          <AccordionItem value="a" className="border-b border-line py-2">
-            <AccordionTrigger className="py-5 font-mono-rh text-[13px] uppercase tracking-[0.08em] text-ink hover:no-underline data-[slot=accordion-trigger]:rounded-none">
-              A · Financial scenario 2029–2034
-            </AccordionTrigger>
-            <AccordionContent className="pb-6">
-              <p className="text-[15px] leading-relaxed text-ink-soft">
-                Full contribution trajectory and capacity share, presented
-                as capacity-derived and explicitly labeled a{" "}
-                <em className="font-didone not-italic italic">scenario</em>,
-                carried in the parent&rsquo;s model as upside, not base
-                case (see Slide 11).
-              </p>
-              <div className="mt-5 border-t border-line-soft font-mono-rh text-[13px]">
-                <div className="ledger-row grid grid-cols-[140px_1fr_1fr] gap-4 py-3">
-                  <span className="text-ink-mute">2029</span>
-                  <span className="text-ink-soft">$58M studio contribution</span>
-                  <span className="text-ink-soft">15% of platform capacity</span>
-                </div>
-                <div className="grid grid-cols-[140px_1fr_1fr] gap-4 py-3">
-                  <span className="text-ink-mute">2034</span>
-                  <span className="text-ink-soft">$2.9B studio contribution</span>
-                  <span className="text-ink-soft">28% of platform capacity</span>
-                </div>
-              </div>
-              <p className="mt-4 font-mono-rh text-[11px] leading-relaxed text-ink-mute">
-                Interpolated 2030–2033 line items are not specified in the
-                locked copy: populate from the parent&rsquo;s model before
-                send rather than infer intermediate figures here.
-              </p>
-            </AccordionContent>
-          </AccordionItem>
+        <AppendixPanel id="appendix-a" title="A · Financial model snapshot, 2028–2034">
+          <p>Brand and advertising revenue is modeled within Symphony Space. Rhapsody has no standalone revenue model; all program revenue books to Symphony.</p>
+          <dl className="mt-5 font-mono-rh text-[13px]">
+            <ModelRow label="2028" value="$1.075M of total revenue from licensing and consulting. No brand and advertising revenue in the current model." />
+            <ModelRow label="2028 target" value="$1M–$4M in total contracted value sought for two founding demonstrator works. A commercial target, not secured contracts or modeled 2028 revenue." />
+            <ModelRow label="2029" value="$58.3M of brand and advertising revenue, on 15% of subscription-platform capacity at 90% booked." />
+            <ModelRow label="2034" value="Brand and advertising capacity allocation reaches 28%." />
+          </dl>
+          <p className="mt-4 text-[13px] text-ink-mute">Source: Symphony financial-model figures confirmed by Merry Walker, September 2026. Intermediate annual figures and a 2034 revenue amount are not presented in this overview.</p>
+        </AppendixPanel>
 
-          <AccordionItem value="b" className="border-b border-line py-2">
-            <AccordionTrigger className="py-5 font-mono-rh text-[13px] uppercase tracking-[0.08em] text-ink hover:no-underline">
-              B · Pricing basis
-            </AccordionTrigger>
-            <AccordionContent className="pb-6">
-              <p className="text-[15px] leading-relaxed text-ink-soft">
-                The only place a $/kg comparison appears in this deck,
-                framed as commodity rate vs. studio rate; Mass Silence
-                applies everywhere else (see Slide 14, rule 5).
-              </p>
-              <div className="mt-5 border-t border-line-soft font-mono-rh text-[13px]">
-                <div className="ledger-row grid grid-cols-[180px_1fr] gap-4 py-3">
-                  <span className="text-ink-mute">Commodity rate</span>
-                  <span className="text-ink-soft">
-                    [ TK: $/kg figure from data room; not specified in
-                    locked copy ]
-                  </span>
-                </div>
-                <div className="grid grid-cols-[180px_1fr] gap-4 py-3">
-                  <span className="text-ink-mute">Studio rate</span>
-                  <span className="text-ink-soft">
-                    10–40× the commodity rate, per work (Slide 01 / 11)
-                  </span>
-                </div>
-              </div>
-            </AccordionContent>
-          </AccordionItem>
+        <AppendixPanel id="appendix-b" title="B · Pricing basis">
+          <p>Brand and advertising capacity is estimated at $30,000 per kg per month, typically booked as roughly one-month, non-recurring engagements. The annualized equivalent is $360,000 per kg per year, not a recurring revenue commitment.</p>
+          <dl className="mt-5 font-mono-rh text-[13px]">
+            <ModelRow label="Weighted-average subscription rate" value="Brand and advertising pricing is 4.6× Symphony's weighted-average subscription rate." />
+            <ModelRow label="Long-Term Plan rate" value="Brand and advertising pricing is 7.5× Symphony's Long-Term Plan rate." />
+            <ModelRow label="Mass and volume" value="Rates are rough estimates. Larger or heavier works cost more; smaller or lighter works cost less. Final pricing depends on both mass and volume." />
+          </dl>
+          <p className="mt-4 text-[13px] text-ink-mute">Comparisons use Symphony&rsquo;s own rate card, not an external commodity-capacity benchmark.</p>
+        </AppendixPanel>
 
-          <AccordionItem value="c" className="border-b border-line py-2">
-            <AccordionTrigger className="py-5 font-mono-rh text-[13px] uppercase tracking-[0.08em] text-ink hover:no-underline">
-              C · Trademark status
-            </AccordionTrigger>
-            <AccordionContent className="pb-6">
-              <div className="border-t border-line-soft font-mono-rh text-[13px]">
-                <div className="ledger-row grid grid-cols-[180px_1fr] gap-4 py-3">
-                  <span className="text-ink-mute">Class coverage</span>
-                  <span className="text-ink-soft">35 / 38 / 41</span>
-                </div>
-                <div className="ledger-row grid grid-cols-[180px_1fr] gap-4 py-3">
-                  <span className="text-ink-mute">Status</span>
-                  <span className="text-ink-soft">
-                    In knockout search as of Sept 2026; &ldquo;Project
-                    Rhapsody&rdquo; is a working codename pending clearance
-                    (Slide 00 footnote).
-                  </span>
-                </div>
-                <div className="grid grid-cols-[180px_1fr] gap-4 py-3">
-                  <span className="text-ink-mute">Shortlist / ruled-out</span>
-                  <span className="text-ink-soft">
-                    [ TK: trademark counsel to populate before send ]
-                  </span>
-                </div>
-              </div>
-            </AccordionContent>
-          </AccordionItem>
+        <AppendixPanel id="appendix-c" title="C · Trademark status">
+          <dl className="font-mono-rh text-[13px]">
+            <ModelRow label="Class coverage" value="35 / 38 / 41" />
+            <ModelRow label="Status" value="In knockout search as of September 2026. Project Rhapsody remains a working codename pending clearance." />
+            <ModelRow label="Counsel review" value="Final name clearance and the shortlist remain subject to trademark counsel's review." />
+          </dl>
+        </AppendixPanel>
 
-          <AccordionItem value="d" className="border-b border-line py-2">
-            <AccordionTrigger className="py-5 font-mono-rh text-[13px] uppercase tracking-[0.08em] text-ink hover:no-underline">
-              D · Governance detail
-            </AccordionTrigger>
-            <AccordionContent className="pb-6 text-[15px] leading-relaxed text-ink-soft">
-              <p>
-                <strong className="text-ink">Entity structure.</strong>{" "}
-                Rhapsody is architected as a separate entity and brand from
-                the platform partner, no shared identity, ever (Slide 14,
-                rule 1).
-              </p>
-              <p>
-                <strong className="text-ink">Data-plane architecture.</strong>{" "}
-                Every work runs on physically and cryptographically
-                separate networks from platform operations; the client
-                translation is &ldquo;your session is yours alone&rdquo;
-                (Slide 14, rule 2).
-              </p>
-              <p>
-                <strong className="text-ink">Screening process.</strong>{" "}
-                Every player (Session client or Studio Services client
-                alike) passes counsel-approved screening before invitation
-                or engagement (Slide 14, rule 3; Risk 11).
-              </p>
-            </AccordionContent>
-          </AccordionItem>
+        <AppendixPanel id="appendix-d" title="D · Governance detail">
+          <p><strong className="text-ink">Program structure.</strong> Rhapsody operates within Symphony Space. It is not a separate legal entity, cannot grant equity or raise independently, and books revenue to Symphony.</p>
+          <p className="mt-4"><strong className="text-ink">Brand and data separation.</strong> The governance framework specifies a distinct creative brand and physically and cryptographically segregated program networks. These are operational boundaries, not a legal firewall.</p>
+          <p className="mt-4"><strong className="text-ink">Screening.</strong> Session and Studio Services participants pass counsel-approved screening before invitation or engagement.</p>
+          <p className="mt-4"><strong className="text-ink">Capacity discipline.</strong> Long-term anchors are capped at 40% of studio capacity. This program constraint is distinct from the financial model&rsquo;s brand and advertising allocation of 15% of subscription-platform capacity in 2029, rising to 28% in 2034.</p>
+        </AppendixPanel>
 
-          <AccordionItem value="e" className="py-2">
-            <AccordionTrigger className="py-5 font-mono-rh text-[13px] uppercase tracking-[0.08em] text-ink hover:no-underline">
-              E · Risk register
-            </AccordionTrigger>
-            <AccordionContent className="pb-6">
-              <div className="border-t border-line-soft font-mono-rh text-[13px]">
-                {RISKS.map((r) => (
-                  <div
-                    key={r.n}
-                    className="ledger-row grid grid-cols-[32px_1fr] gap-4 py-4"
-                  >
-                    <span className="text-signal">{r.n}</span>
-                    <div>
-                      <p className="font-didone text-base not-italic text-ink">
-                        {r.title}
-                      </p>
-                      <p className="mt-1 leading-relaxed text-ink-soft">
-                        {r.body}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </AccordionContent>
-          </AccordionItem>
-        </Accordion>
+        <AppendixPanel id="appendix-e" title="E · Risk register">
+          <ol className="font-mono-rh text-[13px]">
+            {RISKS.map((risk, index) => (
+              <li key={risk.title} className="ledger-row grid grid-cols-[32px_1fr] gap-4 py-4">
+                <span className="text-signal">{String(index + 1).padStart(2, "0")}</span>
+                <div>
+                  <h4 className="font-didone text-lg text-ink">{risk.title}</h4>
+                  <p className="mt-1">{risk.body}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
+        </AppendixPanel>
       </div>
     </SectionShell>
+  );
+}
+
+function AppendixPanel({ id, title, children }: { id: string; title: string; children: React.ReactNode }) {
+  return (
+    <section id={id} className="mt-12 scroll-mt-28 border-t border-line pt-6">
+      <h3 className="mb-5 font-mono-rh text-[13px] uppercase text-ink">{title}</h3>
+      <div className="text-[15px] leading-relaxed text-ink-soft">{children}</div>
+    </section>
+  );
+}
+
+function ModelRow({ label, value }: { label: string; value: string }) {
+  return (
+    <div className="ledger-row grid grid-cols-1 gap-2 py-4 sm:grid-cols-[180px_1fr] sm:gap-6">
+      <dt className="text-ink-mute">{label}</dt>
+      <dd>{value}</dd>
+    </div>
   );
 }

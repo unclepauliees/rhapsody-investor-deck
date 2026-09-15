@@ -8,58 +8,65 @@ export function EconomicsSection() {
       <StickyMediaSection
         imgUrl="/media/11_economics.webp"
         subheading="[ Economics ]"
-        heading="One work pays like a platform."
+        heading="Creative engagements. Symphony revenue."
       >
         <Eyebrow>[ Economics ]</Eyebrow>
         <h2 className="max-w-[62ch] font-didone text-[clamp(26px,3.4vw,40px)] leading-[1.12]">
-          One work pays like a platform.
+          Creative engagements. Symphony revenue.
         </h2>
 
         <div className="mt-12 grid grid-cols-1 gap-8 border-t border-line pt-8 sm:grid-cols-3">
           <div>
             <p className="font-didone text-[clamp(28px,3vw,36px)] leading-none">
-              $500K–$2M
+              $30K
             </p>
             <p className="mt-3 font-mono-rh text-[11px] leading-relaxed text-ink-mute">
-              per work, per window
+              estimated capacity rate per kg per month
             </p>
           </div>
           <div>
             <p className="font-didone text-[clamp(28px,3vw,36px)] leading-none">
-              10–40×
+              4.6–7.5×
             </p>
             <p className="mt-3 font-mono-rh text-[11px] leading-relaxed text-ink-mute">
-              the commodity rate for equivalent capacity
+              Symphony subscription rates: 4.6× weighted average; 7.5× Long-Term Plan
             </p>
           </div>
           <div>
             <p className="font-didone text-[clamp(28px,3vw,36px)] leading-none">
-              90%+
+              $58.3M
             </p>
             <p className="mt-3 font-mono-rh text-[11px] leading-relaxed text-ink-mute">
-              contribution margin on marginal platform capacity
+              modeled 2029 brand and advertising revenue, booked to Symphony
             </p>
           </div>
         </div>
 
         <p className="mt-10 max-w-[62ch] text-lg leading-relaxed text-ink-soft">
-          Rhapsody sells the platform&rsquo;s spare and flex capacity as
-          moments. The hardware is already funded, launched, and operated
-          for other missions; the studio&rsquo;s cost is creative
-          production, curation, and rights, not the bus. That is why the
-          margin exists.
+          Rhapsody is a Symphony Space program. Brand and advertising
+          revenue books directly to Symphony; the program does not buy
+          capacity from Symphony or operate a standalone revenue model.
+          Capacity is priced at approximately $30,000 per kg per month,
+          typically as one-month, non-recurring engagements.
+        </p>
+        <p className="mt-4 max-w-[62ch] text-[15px] leading-relaxed text-ink-soft">
+          The $360,000 per kg per year equivalent is a rate comparison,
+          not an annual recurring contract. Estimates depend on both mass
+          and volume: larger or heavier works cost more; smaller or lighter
+          works cost less.
         </p>
 
         <div className="mt-10 border-t border-line">
-          <Line date="2028 · Demonstrator" body={<>Two founding works fly. Contracted value: <strong className="text-ink">$1M–$4M</strong>, against a $1M pre-seed.</>} />
-          <Line date="2029 · First commercial platform" body={<>Studio contribution of $58M on 15% of platform capacity, per the parent&rsquo;s model, carried there as upside, not base case.</>} />
-          <Line date="Governance" body="Long-term anchors capped at 40% of studio capacity. The margin lives in the unrepeatable." />
-          <Line date="The floor" body="Studio Services to the parent's client book: every platform customer is a warm creative-services lead. Revenue before first light, and a cost base that pays for itself." />
+          <Line date="2028 · Commercial target" body={<>Pursuing <strong className="text-ink">$1M–$4M</strong> in total contracted value for two founding demonstrator works. This is a target, not secured contracts or modeled revenue. Symphony models $1.075M in licensing and consulting revenue in 2028, with no brand and advertising revenue that year.</>} />
+          <Line date="2029 · Modeled revenue" body={<>$58.3M of brand and advertising revenue, using 15% of subscription-platform capacity at 90% booked. Revenue books to Symphony Space.</>} />
+          <Line date="2034 · Capacity allocation" body="Brand and advertising capacity share ramps to 28% in Symphony's model. This allocation is distinct from the 40% cap on long-term studio anchors." />
+          <Line date="Studio Services" body="Creative services for Symphony's existing customers are delivered within the program; all associated revenue books to Symphony." />
         </div>
 
         <p className="mt-8 font-mono-rh text-[11px] leading-relaxed tracking-[0.02em] text-ink-mute">
-          Full 2029–2034 scenario (contribution and capacity share 15% →
-          28%) in Appendix A.
+          Model snapshot and capacity share (15% → 28%) in{" "}
+          <a href="#appendix-a" className="underline underline-offset-4">Appendix A</a>.
+          {" "}Pricing assumptions and rate-card comparisons in Appendix B.
         </p>
       </StickyMediaSection>
     </SectionShell>

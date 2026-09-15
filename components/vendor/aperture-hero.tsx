@@ -125,7 +125,7 @@ export function ApertureHero() {
             className="flex flex-col items-center gap-8 px-6 text-center"
           >
             <p className="font-mono-rh text-[10px] tracking-[0.3em] uppercase text-paper/60">
-              [ Investor Presentation · September 2026 · Confidential ]
+              [ Program Overview · September 2026 · Confidential ]
             </p>
             <h1 className="max-w-3xl text-balance font-didone text-[clamp(28px,4.8vw,58px)] leading-[1.05] text-paper">
               Nobody has played this before.
@@ -139,7 +139,7 @@ export function ApertureHero() {
               priority
             />
             <p className="max-w-xl font-mono-rh text-[10px] leading-relaxed tracking-[0.04em] text-paper/45">
-              A subsidiary of Symphony Space Inc. &ldquo;Project Rhapsody&rdquo;
+              A Symphony Space program. &ldquo;Project Rhapsody&rdquo;
               is a working codename pending trademark clearance; the emblem is
               the durable asset.
             </p>
