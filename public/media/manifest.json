@@ -22,6 +22,15 @@
       "note": "Originally generated for Section 02 (Highlights); moved to Section 01 (Thesis) per operator direction, files renamed 02_highlights.* -> 01_thesis.* accordingly. Superseded predecessor job 4ce08079 (interior-studio version) per operator feedback: needed to read as outside in space with the sun as backdrop, and the arm needed to be visibly releasing the shoe into position for the shot rather than just holding it static. Operator-directed departure from the original media-matrix still concept for this shot — reimagines a reference BTS product-rig clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_1818242565.mp4) with a robot arm instead of human hands. Pure text-to-video (no reference image); Higgsfield offered its \"IN THE DARK\" preset for this prompt and it was declined in favor of the literal prompt. Transcoded from source HEVC to H.264 (1.35MB) + VP9 WebM (900KB); poster extracted from a mid-tumble frame. Note: the sneaker silhouette reads close to a real commercial shoe design (no visible logo/wordmark) — worth a glance before external use given it's an investor-facing asset."
     },
     {
+      "section": "02-highlights",
+      "file": "02_highlights.webp",
+      "status": "accepted",
+      "model": "gpt_image_2_5",
+      "job_id": "f50f69b8-4d0b-4d36-aa96-8f7bb68a5b5d",
+      "shot": "A weathered, hand-modified vintage medium-format camera on a plain grey studio backdrop — hand-cut wooden gear-shaped discs bolted to its lens barrel, a small hairline vermilion painted disc marking, a fine metal ball-chain lanyard, hand-lettered serial numbers on the white-painted chassis. No brand names, no logos, no wordmarks, no agency insignia.",
+      "note": "Operator supplied a reference image (/Users/paulestevez_ipx_temp/Downloads/cosmos_324186223_16_9.png) of a similarly kit-bashed vintage camera prop carrying a visible NASA logo and NASA-red color scheme. Declined to use it directly or replicate the branding — real trademark exposure plus a direct violation of the deck's own hard line (no aerospace-agency association, ever). Regenerated the same weathered/hand-modified aesthetic with all insignia stripped and the accent recolored to Rhapsody vermilion (#C93A1E)."
+    },
+    {
       "section": "06-solution",
       "file": "06_solution.webp",
       "status": "accepted",
@@ -40,7 +49,6 @@
     }
   ],
   "pending": [
-    "02-highlights",
     "03-why-now",
     "04-third-movement (video)",
     "05-problem",
