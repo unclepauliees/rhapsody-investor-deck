@@ -42,6 +42,7 @@ export function HighlightsSection() {
   return (
     <SectionShell id="02-highlights" index="02">
       <StickyMediaSection
+        mobileImgUrl="/media/mobile/02_highlights.webp"
         imgUrl="/media/02_highlights.webp"
         subheading="[ Highlights ]"
         heading="Six reasons this is a studio, not a stunt."

@@ -21,6 +21,7 @@ export function WhyNowSection() {
   return (
     <SectionShell id="03-why-now" index="03">
       <StickyMediaSection
+        mobileImgUrl="/media/mobile/03_why_now.webp"
         imgUrl="/media/03_why_now.webp"
         subheading="[ Why Now ]"
         heading="Anything can be generated. Nothing can be re-lived."

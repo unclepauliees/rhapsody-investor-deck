@@ -12,6 +12,7 @@ export function ProblemSection() {
   return (
     <SectionShell id="05-problem" index="05">
       <StickyMediaSection
+        mobileImgUrl="/media/mobile/05_problem.webp"
         imgUrl="/media/05_problem.webp"
         subheading="[ Problem ]"
         heading="Space has been a stunt, never a studio."

@@ -34,6 +34,7 @@ export function TeamSection() {
   return (
     <SectionShell id="17-team" index="17">
       <StickyMediaSection
+        mobileImgUrl="/media/mobile/17_team.webp"
         imgUrl="/media/17_team.webp"
         subheading="[ Team & Partners ]"
         heading="Symphony's team. Specialist partners. One creative program."

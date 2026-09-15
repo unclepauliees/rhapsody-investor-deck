@@ -6,6 +6,7 @@ export function EconomicsSection() {
   return (
     <SectionShell id="11-economics" index="11">
       <StickyMediaSection
+        mobileImgUrl="/media/mobile/11_economics.webp"
         imgUrl="/media/11_economics.webp"
         subheading="[ Economics ]"
         heading="Creative engagements. Symphony revenue."
