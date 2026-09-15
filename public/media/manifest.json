@@ -1,8 +1,17 @@
 {
   "base_prompt_template": "{SHOT}. Editorial luxury photography, museum-grade biennale-catalogue restraint, natural or single-source light, muted paper-and-ink palette with at most one small vermilion (#C93A1E) accent, shallow depth, film grain, no text, no logos, no people's faces, generous negative space, 16:9. Absolutely no satellites, rockets, spacecraft, solar panels, antennae, mission-control screens, planet-with-rings, orbit swooshes, star-field wallpaper, or sci-fi rendering; no musical notes, clefs, staves, soundwaves, or instruments; no premium black-and-gold; no generic tech-startup or dashboard look.",
   "stills_model": "gpt_image_2_5",
-  "video_model": "TBD — not yet tested; spec default candidate: seedance_2_0",
+  "video_model": "seedance_2_5 (mode: omni_reference, start_image reference)",
   "assets": [
+    {
+      "section": "00-cover",
+      "file": "00_hero_firstlight.mp4 / 00_hero_firstlight.webm",
+      "status": "accepted",
+      "model": "seedance_2_5",
+      "job_id": "56794cb5-0cc1-42d1-b329-9ad8f9a17010",
+      "shot": "Slow dawn bloom over a planet's limb: a thin luminous vermilion arc across the lower third of a black frame, one bright point of light breaking over its apex, blooming and settling — seamless 10s loop.",
+      "note": "Reference image supplied by operator (an existing Save the Date asset, /Users/paulestevez_ipx_temp/Downloads/hf_20260910_120734_0801ef2b-7c7d-4d5a-b809-5cb48d9498d7.png) used as start_image. Transcoded from source HEVC to H.264 (846KB) + VP9 WebM (288KB); poster extracted from frame 0."
+    },
     {
       "section": "06-solution",
       "file": "06_solution.webp",
@@ -22,7 +31,6 @@
     }
   ],
   "pending": [
-    "00-cover (video)",
     "01-thesis",
     "02-highlights",
     "03-why-now",

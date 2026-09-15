@@ -1,9 +1,12 @@
 "use client";
 
 // PLACEHOLDER — see components/vendor/README.md.
-// Re-skin of 21st.dev "sunset-skyline-hero" once vendored: scroll pushes
-// through an aperture onto the first-light loop, ending on the wordmark +
-// emblem behind a horizon-line cutout. Scroll-back closes the aperture.
+// Re-skin of 21st.dev "sunset-skyline-hero" once vendored: the first-light
+// loop fills the frame as the camera pushes in on scroll, and the wordmark
+// tilts up out of 3D depth (rotateX + translateZ on a perspective layer) to
+// stand full-height over it, echoing the reference component's "camera
+// pushes through a window onto the skyline, ending on a giant brand mark"
+// mechanic. Scroll back and the wordmark recedes into depth again.
 
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -16,19 +19,20 @@ export function ApertureHero() {
     offset: ["start start", "end start"],
   });
 
-  const apertureScale = useTransform(scrollYProgress, [0, 0.55], [0.34, 1.35]);
-  const frameOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
-  const wordmarkOpacity = useTransform(scrollYProgress, [0.35, 0.6], [0, 1]);
-  const copyOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
+  const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.22]);
+  const bgDarken = useTransform(scrollYProgress, [0, 0.6], [0.45, 0.75]);
+  const copyOpacity = useTransform(scrollYProgress, [0, 0.22], [1, 0]);
+
+  const markOpacity = useTransform(scrollYProgress, [0.14, 0.32], [0, 1]);
+  const markRotateX = useTransform(scrollYProgress, [0.14, 0.58], [70, 0]);
+  const markScale = useTransform(scrollYProgress, [0.14, 0.58, 0.9], [0.55, 1.06, 1]);
+  const markZ = useTransform(scrollYProgress, [0.14, 0.58], [-500, 0]);
 
   return (
-    <div ref={ref} className="relative h-[220vh]">
+    <div ref={ref} className="relative h-[240vh]">
       <div className="sticky top-0 h-[100svh] overflow-hidden bg-ink">
-        {/* first-light loop, masked by the expanding aperture */}
-        <motion.div
-          style={{ scale: apertureScale }}
-          className="absolute left-1/2 top-1/2 aspect-video w-[92vw] max-w-5xl -translate-x-1/2 -translate-y-1/2 overflow-hidden border border-paper/25"
-        >
+        {/* first-light loop, full-bleed, camera pushing slowly in on scroll */}
+        <motion.div style={{ scale: bgScale }} className="absolute inset-0">
           <video
             className="h-full w-full object-cover"
             autoPlay
@@ -41,33 +45,42 @@ export function ApertureHero() {
             <source src="/media/00_hero_firstlight.webm" type="video/webm" />
             <source src="/media/00_hero_firstlight.mp4" type="video/mp4" />
           </video>
-
-          {/* horizon-line cutout carrying the wordmark + emblem */}
           <motion.div
-            style={{ opacity: wordmarkOpacity }}
-            className="absolute inset-0 flex flex-col items-center justify-center gap-6 bg-ink/55"
+            style={{ opacity: bgDarken }}
+            className="absolute inset-0 bg-ink"
+          />
+        </motion.div>
+
+        {/* wordmark tilts up out of 3D depth as the camera arrives */}
+        <div
+          className="absolute inset-0 flex items-center justify-center"
+          style={{ perspective: "1400px" }}
+        >
+          <motion.div
+            style={{
+              opacity: markOpacity,
+              scale: markScale,
+              rotateX: markRotateX,
+              z: markZ,
+              transformStyle: "preserve-3d",
+            }}
+            className="flex flex-col items-center gap-6"
           >
             <Image
               src="/brand/emblem-on-dark.svg"
               alt=""
-              width={96}
-              height={61}
+              width={110}
+              height={70}
             />
             <Image
               src="/brand/wordmark-inverted.svg"
               alt="Rhapsody"
-              width={360}
-              height={90}
-              className="w-[46vw] max-w-md"
+              width={520}
+              height={130}
+              className="w-[54vw] max-w-2xl"
             />
           </motion.div>
-        </motion.div>
-
-        {/* aperture frame — ink-line rectangle on paper */}
-        <motion.div
-          style={{ opacity: frameOpacity }}
-          className="pointer-events-none absolute left-1/2 top-1/2 aspect-video w-[92vw] max-w-5xl -translate-x-1/2 -translate-y-1/2 border border-paper/70"
-        />
+        </div>
 
         <motion.div
           style={{ opacity: copyOpacity }}
