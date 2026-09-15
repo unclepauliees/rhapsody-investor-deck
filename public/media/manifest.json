@@ -49,6 +49,15 @@
       "note": "Operator-supplied clip (/Users/paulestevez_ipx_temp/Downloads/Camera Vid.mp4), used as-is — not a Higgsfield generation. Re-encoded from source H.264 (3.79MB, 3.47s) to a smaller H.264 (1.78MB) + VP9 WebM (801KB); poster extracted from frame 0. Clip is short (3.47s) and loops via the <video loop> attribute rather than being extended to the spec's usual 8-10s target."
     },
     {
+      "section": "05-problem",
+      "file": "05_problem.webp",
+      "status": "accepted",
+      "model": "gpt_image_2_5",
+      "job_id": "1e64f203-cfe5-477d-b046-d04fe7b44c7c",
+      "shot": "An unbranded glass bottle with a plain blank label, mounted on a simple black tripod stand, photographed against the curve of the Earth from near-space altitude — clouds below, blackness above. Wide-angle lens distortion, a single one-off marketing-stunt photograph.",
+      "note": "Operator supplied a real product marketing-stunt photo (/Users/paulestevez_ipx_temp/Downloads/cosmos_1924549645_16_9.png, a Heinz ketchup bottle sent to the edge of space) as the reference — thematically perfect for this slide's exact critique of one-off space stunts, but carrying a visible HEINZ logo/wordmark. Declined to use it directly; recreated the identical composition with the bottle fully unbranded (blank label, no text). The genericized version arguably makes the slide's point better than a real branded example would."
+    },
+    {
       "section": "06-solution",
       "file": "06_solution.webp",
       "status": "accepted",
@@ -67,7 +76,6 @@
     }
   ],
   "pending": [
-    "05-problem",
     "07-session (video)",
     "08-offer",
     "10-first-generation",
