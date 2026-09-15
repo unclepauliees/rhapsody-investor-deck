@@ -12,7 +12,9 @@ export function SolutionSection() {
   return (
     <SectionShell id="06-solution" index="06">
       <StickyMediaSection
-        imgUrl="/media/06_solution.webp"
+        videoUrl="/media/06_solution.mp4"
+        webmUrl="/media/06_solution.webm"
+        posterUrl="/media/06_solution_poster.jpg"
         subheading="[ Solution ]"
         heading="The first instrument for orbit."
       >

@@ -59,11 +59,12 @@
     },
     {
       "section": "06-solution",
-      "file": "06_solution.webp",
+      "file": "06_solution.mp4 / 06_solution.webm",
       "status": "accepted",
-      "model": "gpt_image_2_5",
-      "job_id": "b604d702-f7cb-46f7-8ab2-4803a7e18654",
-      "shot": "Macro of a precision optical instrument in brushed titanium and matte black on white paper — a lens assembly, a machined ring, a hairline vermilion index mark. Reads as a camera, not a spacecraft."
+      "model": "operator-supplied (not generated)",
+      "job_id": null,
+      "shot": "A camera lens iris/aperture closing in mechanical macro, match-cutting into a human eye's iris — the instrument and the eye as the same shape.",
+      "note": "Replaced the original still (job b604d702, a precision-instrument macro) with an operator-supplied clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_377599585.mp4) — not a Higgsfield generation. Original 06_solution.webp removed. Re-encoded to H.264 (514KB) + VP9 WebM (369KB); poster extracted from frame 0."
     },
     {
       "section": "09-market",
