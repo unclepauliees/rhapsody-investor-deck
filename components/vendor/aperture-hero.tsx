@@ -11,6 +11,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import Image from "next/image";
+import { ChevronDown } from "lucide-react";
 import { withBasePath } from "@/lib/base-path";
 
 export function ApertureHero() {
@@ -69,6 +70,7 @@ export function ApertureHero() {
   const revealRotateX = useTransform(progress, [0.78, 0.94], [70, 0]);
   const revealScale = useTransform(progress, [0.78, 0.94], [0.6, 1]);
   const revealZ = useTransform(progress, [0.78, 0.94], [-500, 0]);
+  const scrollHintOpacity = useTransform(progress, [0, 0.08, 0.22], [1, 1, 0]);
 
   return (
     <div ref={ref} className="relative h-[260vh]">
@@ -143,6 +145,17 @@ export function ApertureHero() {
             </p>
           </motion.div>
         </div>
+        <motion.div
+          aria-hidden="true"
+          style={{ opacity: scrollHintOpacity }}
+          className="pointer-events-none absolute inset-x-0 bottom-[max(24px,env(safe-area-inset-bottom))] flex flex-col items-center gap-2 text-paper drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]"
+        >
+          <span className="font-mono-rh text-[10px] uppercase">Scroll</span>
+          <ChevronDown
+            className="size-5 motion-safe:animate-bounce"
+            strokeWidth={1.5}
+          />
+        </motion.div>
       </div>
     </div>
   );
