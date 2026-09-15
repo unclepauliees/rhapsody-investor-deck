@@ -1,0 +1,8 @@
+{
+  "hosting": {
+    "target": "deck",
+    "public": "out",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "predeploy": ["npm run build:firebase"]
+  }
+}

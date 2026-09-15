@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "project-rhapsody-eb1bc"
+  },
+  "targets": {
+    "project-rhapsody-eb1bc": {
+      "hosting": {
+        "deck": [
+          "project-rhapsody-deck-eb1bc"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
