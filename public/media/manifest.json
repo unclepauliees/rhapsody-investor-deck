@@ -76,6 +76,15 @@
       "note": "Operator supplied a reference GIF (/Users/paulestevez_ipx_temp/Downloads/cosmos_1270493928.gif) that turned out to be a literal sci-fi HUD/dashboard interface on inspection — targeting-reticle rings, telemetry readouts, on-screen labels like \"WIND SYSTEM\" and \"P1 449\". Declined outright: this hits three hard lines at once (no mission-control screens, no dashboard look, no sci-fi rendering), not a borderline case. Built the section around its original media-matrix concept instead — the mechanical shutter open/close — via Higgsfield text-to-video."
     },
     {
+      "section": "08-offer",
+      "file": "08_offer.webp",
+      "status": "accepted",
+      "model": "gpt_image_2_5",
+      "job_id": "d7204479-6d36-483c-a6f1-521659a173b2",
+      "shot": "Three objects on heavy cream paper, overhead flat-lay: a folded formal invitation card, a small circular wax seal in vermilion, a compact archival slipcase in muted grey board — Session, Residency, Master.",
+      "note": "Operator supplied a reference image of a retina-scan biometric HUD overlay on an eye (circular targeting rings, digital scan-line UI, tech labels). Declined: same category as the Section 07 rejection — sci-fi/dashboard rendering — and would have awkwardly repeated the eye motif already used in Section 06. Built the section around its original media-matrix concept instead, which maps directly onto the three named products in the copy."
+    },
+    {
       "section": "09-market",
       "file": "09_market.webp",
       "status": "accepted",
@@ -86,7 +95,6 @@
     }
   ],
   "pending": [
-    "08-offer",
     "10-first-generation",
     "11-economics",
     "12-landscape",
