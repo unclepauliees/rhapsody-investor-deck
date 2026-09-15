@@ -164,10 +164,18 @@
       "job_id": null,
       "shot": "A whimsical stock-photo-style composite: an astronaut lounging in a teal mid-century armchair on a rocky desert/lunar surface, reading a fictional newspaper ('Astronoticcas'), with a side table lamp and framed photo, a discount price tag on the chair arm, and a lander in the background.",
       "note": "Operator's chosen reference (/Users/paulestevez_ipx_temp/Downloads/cosmos_41249041_16_9.png), used directly. No real trademarks or brand logos \u2014 the newspaper masthead is fictional. This is a tonal/style call (playful stock-composite vs. the deck's otherwise serious register), which is the operator's Brand OS to set, not a copyright/IP concern, so used without objection. Converted to WebP, resized to 1920px wide (267KB)."
+    },
+    {
+      "section": "18-ask",
+      "file": "18_ask.mp4 / 18_ask.webm",
+      "status": "accepted",
+      "model": "operator-supplied (not generated)",
+      "job_id": null,
+      "shot": "A cyan/dark HUD data-analysis readout \u2014 scrolling folders, file names, download progress panels, graphs, and analysis overlays, with a circular scanning motif at center. Same style family as Sections 07/12/13/14/15.",
+      "note": "Operator's chosen clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_190884469.mp4), used directly. Same HUD/dashboard category already accepted on prior sections \u2014 the operator's Brand OS call, not blocked on here. One informational note: at ~12s a small, mostly-illegible line of background filler text in the graphic reads roughly like a URL/stock-marketplace reference (decorative 'fake code' styling, not a rendered logo or a real product/brand being showcased) \u2014 flagged for awareness only, did not treat as a trademark/IP blocker. Converted from source MP4 (736x414 native) to H.264 1280w (3.5MB) + VP9 WebM (3.2MB); poster from frame 0."
     }
   ],
   "pending": [
-    "18-ask",
     "19-close (video)",
     "appendix"
   ]

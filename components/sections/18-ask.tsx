@@ -22,7 +22,9 @@ export function AskSection() {
   return (
     <SectionShell id="18-ask" index="18">
       <StickyMediaSection
-        imgUrl="/media/18_ask.webp"
+        videoUrl="/media/18_ask.mp4"
+        webmUrl="/media/18_ask.webm"
+        posterUrl="/media/18_ask_poster.jpg"
         subheading="[ The Ask ]"
         heading="$1M to open the studio and fly the first two works."
       >

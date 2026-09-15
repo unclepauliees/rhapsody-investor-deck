@@ -20,7 +20,7 @@ export function CloseSection() {
 
         <div className="relative flex flex-col items-center gap-8">
           <Image
-            src="/brand/emblem-halo.svg"
+            src="/brand/emblem-halo-clear.svg"
             alt=""
             width={140}
             height={89}
