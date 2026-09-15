@@ -9,6 +9,7 @@
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import { withBasePath } from "@/lib/base-path";
 
 type Props = {
   imgUrl?: string;
@@ -55,15 +56,15 @@ export function StickyMediaSection({
               muted
               loop
               playsInline
-              poster={posterUrl}
+              poster={withBasePath(posterUrl)}
               preload="metadata"
             >
-              {webmUrl && <source src={webmUrl} type="video/webm" />}
-              <source src={videoUrl} type="video/mp4" />
+              {webmUrl && <source src={withBasePath(webmUrl)} type="video/webm" />}
+              <source src={withBasePath(videoUrl)} type="video/mp4" />
             </video>
           ) : imgUrl ? (
             <Image
-              src={imgUrl}
+              src={withBasePath(imgUrl)}
               alt=""
               fill
               priority={priority}

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { SectionShell } from "@/components/deck/section-shell";
+import { withBasePath } from "@/lib/base-path";
 
 export function CloseSection() {
   return (
@@ -11,16 +12,16 @@ export function CloseSection() {
           muted
           loop
           playsInline
-          poster="/media/19_close_poster.jpg"
+          poster={withBasePath("/media/19_close_poster.jpg")}
           preload="metadata"
         >
-          <source src="/media/19_close.webm" type="video/webm" />
-          <source src="/media/19_close.mp4" type="video/mp4" />
+          <source src={withBasePath("/media/19_close.webm")} type="video/webm" />
+          <source src={withBasePath("/media/19_close.mp4")} type="video/mp4" />
         </video>
 
         <div className="relative flex flex-col items-center gap-8">
           <Image
-            src="/brand/emblem-halo-clear.svg"
+            src={withBasePath("/brand/emblem-halo-clear.svg")}
             alt=""
             width={140}
             height={89}

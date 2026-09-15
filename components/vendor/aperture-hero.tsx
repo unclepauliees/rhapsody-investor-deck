@@ -11,6 +11,7 @@
 import { useEffect, useRef } from "react";
 import { motion, useMotionValue, useTransform } from "framer-motion";
 import Image from "next/image";
+import { withBasePath } from "@/lib/base-path";
 
 export function ApertureHero() {
   const ref = useRef<HTMLDivElement>(null);
@@ -75,7 +76,7 @@ export function ApertureHero() {
         {/* still first-light frame — brightens/dims with scroll, never plays */}
         <motion.div style={{ scale: bgScale, filter: bgFilter }} className="absolute inset-0">
           <Image
-            src="/media/00_hero_firstlight_poster.jpg"
+            src={withBasePath("/media/00_hero_firstlight_poster.jpg")}
             alt=""
             fill
             priority
@@ -128,7 +129,7 @@ export function ApertureHero() {
               Nobody has played this before.
             </h1>
             <Image
-              src="/brand/primary-glow-clear.svg"
+              src={withBasePath("/brand/primary-glow-clear.svg")}
               alt="Project Rhapsody · Orbital Media Studio"
               width={620}
               height={300}

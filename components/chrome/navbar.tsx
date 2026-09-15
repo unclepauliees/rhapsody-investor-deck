@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { SECTIONS } from "@/lib/sections-meta";
+import { withBasePath } from "@/lib/base-path";
 
 export function Navbar() {
   const [active, setActive] = useState(SECTIONS[0].index);
@@ -40,7 +41,7 @@ export function Navbar() {
         <div className="flex items-center gap-2.5 font-mono-rh text-[10px] tracking-[0.24em] uppercase">
           <span className="inline-block h-4 w-6 shrink-0" aria-hidden>
             <Image
-              src="/brand/emblem-on-dark.svg"
+              src={withBasePath("/brand/emblem-on-dark.svg")}
               alt=""
               width={24}
               height={16}
