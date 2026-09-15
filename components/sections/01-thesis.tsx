@@ -6,7 +6,9 @@ export function ThesisSection() {
   return (
     <SectionShell id="01-thesis" index="01">
       <StickyMediaSection
-        imgUrl="/media/01_thesis.webp"
+        videoUrl="/media/01_thesis.mp4"
+        webmUrl="/media/01_thesis.webm"
+        posterUrl="/media/01_thesis_poster.jpg"
         subheading="[ Thesis ]"
         heading="The live and unrepeatable is the last real luxury. We are building the only place it can still be made."
         priority

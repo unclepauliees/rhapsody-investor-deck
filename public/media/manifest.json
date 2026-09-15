@@ -13,13 +13,13 @@
       "note": "Reference image supplied by operator (an existing Save the Date asset, /Users/paulestevez_ipx_temp/Downloads/hf_20260910_120734_0801ef2b-7c7d-4d5a-b809-5cb48d9498d7.png) used as start_image. Transcoded from source HEVC to H.264 (846KB) + VP9 WebM (288KB); poster extracted from frame 0."
     },
     {
-      "section": "02-highlights",
-      "file": "02_highlights.mp4 / 02_highlights.webm",
+      "section": "01-thesis",
+      "file": "01_thesis.mp4 / 01_thesis.webm",
       "status": "accepted",
       "model": "seedance_2_5",
       "job_id": "ed480aee-2ddf-40a6-95ca-75382a3863bd",
       "shot": "In the vacuum of open space: a matte-black robotic arm's gripper opens and releases a matte-white unbranded sneaker, which drifts free and tumbles weightlessly away. The sun blazes low and enormous behind the rig, its hard flare sweeping across the arm's joints as the shoe releases, then settling to reveal the sneaker sharp in macro focus against the blackness of space with the sun a brilliant point of light and faint stars visible.",
-      "note": "Superseded job b604d702's predecessor (4ce08079, interior-studio version) per operator feedback: needed to read as outside in space with the sun as backdrop, and the arm needed to be visibly releasing the shoe into position for the shot rather than just holding it static. Operator-directed departure from the original media-matrix still concept (porcelain plinths) — reimagines a reference BTS product-rig clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_1818242565.mp4) with a robot arm instead of human hands. Pure text-to-video (no reference image); Higgsfield offered its \"IN THE DARK\" preset for this prompt and it was declined in favor of the literal prompt. Transcoded from source HEVC to H.264 (1.35MB) + VP9 WebM (900KB); poster extracted from a mid-tumble frame. Note: the sneaker silhouette reads close to a real commercial shoe design (no visible logo/wordmark) — worth a glance before external use given it's an investor-facing asset."
+      "note": "Originally generated for Section 02 (Highlights); moved to Section 01 (Thesis) per operator direction, files renamed 02_highlights.* -> 01_thesis.* accordingly. Superseded predecessor job 4ce08079 (interior-studio version) per operator feedback: needed to read as outside in space with the sun as backdrop, and the arm needed to be visibly releasing the shoe into position for the shot rather than just holding it static. Operator-directed departure from the original media-matrix still concept for this shot — reimagines a reference BTS product-rig clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_1818242565.mp4) with a robot arm instead of human hands. Pure text-to-video (no reference image); Higgsfield offered its \"IN THE DARK\" preset for this prompt and it was declined in favor of the literal prompt. Transcoded from source HEVC to H.264 (1.35MB) + VP9 WebM (900KB); poster extracted from a mid-tumble frame. Note: the sneaker silhouette reads close to a real commercial shoe design (no visible logo/wordmark) — worth a glance before external use given it's an investor-facing asset."
     },
     {
       "section": "06-solution",
@@ -40,7 +40,7 @@
     }
   ],
   "pending": [
-    "01-thesis",
+    "02-highlights",
     "03-why-now",
     "04-third-movement (video)",
     "05-problem",
