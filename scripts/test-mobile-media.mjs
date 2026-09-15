@@ -17,7 +17,9 @@ const browser = await chromium.launch({ channel: 'chrome' });
 await mkdir('.impeccable/review/mobile-media', { recursive: true });
 try {
   for (const width of [320, 390, 767, 768, 844, 1280]) {
-    const page = await browser.newPage({ viewport: { width, height: width === 844 ? 390 : 900 } });
+    const height = width === 844 ? 390 : 900;
+    const fullBleed = width < 768 || (width < 1024 && height <= 500);
+    const page = await browser.newPage({ viewport: { width, height } });
     const errors = [];
     page.on('pageerror', error => errors.push(error.message));
     await page.goto(process.env.DECK_URL || `http://127.0.0.1:${server.address().port}`, { waitUntil: 'networkidle' });
@@ -44,14 +46,14 @@ try {
           pinRange: el.offsetHeight - el.querySelector('.media-stage').offsetHeight,
           overlay: heading.top < art.bottom && heading.bottom > art.top,
           sticky: getComputedStyle(el.querySelector('.media-stage')).position,
-          transform: getComputedStyle(el.querySelector(innerWidth < 768 ? '.media-content' : '.media-art')).transform,
+          transform: getComputedStyle(el.querySelector(matchMedia('(max-width: 767px), (max-width: 1023px) and (max-height: 500px)').matches ? '.media-content' : '.media-art')).transform,
           opacity: Number(getComputedStyle(el.querySelector('.media-heading')).opacity),
         };
       });
       assert.equal(data.src.includes('/media/mobile/'), width < 768 && data.portrait);
-      if (width < 768) {
+      if (fullBleed) {
         assert.ok(Math.abs(data.width - width) < 1);
-        assert.ok(Math.abs(data.height - 900) < 1);
+        assert.ok(Math.abs(data.height - height) < 1);
         assert.ok(data.overlay, `Missing title overlay at ${width}px`);
       }
       assert.equal(data.sticky, 'sticky');
@@ -68,13 +70,13 @@ try {
       await page.waitForTimeout(100);
       const scrolled = await section.evaluate(el => ({
         top: el.querySelector('.media-stage').getBoundingClientRect().top,
-        transform: getComputedStyle(el.querySelector(innerWidth < 768 ? '.media-content' : '.media-art')).transform,
+        transform: getComputedStyle(el.querySelector(matchMedia('(max-width: 767px), (max-width: 1023px) and (max-height: 500px)').matches ? '.media-content' : '.media-art')).transform,
         opacity: Number(getComputedStyle(el.querySelector('.media-heading')).opacity),
       }));
       assert.ok(Math.abs(scrolled.top) < 1, `Stage is not pinned at ${width}px`);
       assert.notEqual(scrolled.transform, data.transform, `Image is not scaling at ${width}px`);
       assert.ok(scrolled.opacity < data.opacity, `Title is not fading at ${width}px: ${JSON.stringify({ data, scrolled, top })}`);
-      if (width < 768) {
+      if (fullBleed) {
         for (const offset of [160, Math.min(675, data.pinRange - 1)]) {
           await page.evaluate(top => window.scrollTo({ top, behavior: 'instant' }), top + offset);
           await page.waitForTimeout(100);
