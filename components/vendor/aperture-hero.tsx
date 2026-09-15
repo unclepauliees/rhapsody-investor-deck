@@ -1,56 +1,110 @@
 "use client";
 
 // PLACEHOLDER — see components/vendor/README.md.
-// Re-skin of 21st.dev "sunset-skyline-hero" once vendored: the first-light
-// loop fills the frame and brightens as the camera pushes in on scroll,
-// with no copy until the very end — where the full lockup (emblem +
-// wordmark + "Orbital Media Studio") rises out of real 3D depth alongside
-// the headline and footnote, echoing the reference component's "camera
-// pushes through a window onto the skyline, ending on a giant brand mark"
-// mechanic. Scroll back and it recedes into depth again.
+// Re-skin of 21st.dev "sunset-skyline-hero" once vendored: a still
+// first-light frame that lightens as the user scrolls down and dims back
+// if they scroll up (pure scroll position, no autoplay). Near the bottom
+// of the scroll range the light fades back down for contrast and the full
+// lockup + headline + footnote rise out of 3D depth, then hold there
+// while the pin finishes before releasing into Section 01.
 
-import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { useEffect, useRef } from "react";
+import { motion, useMotionValue, useTransform } from "framer-motion";
 import Image from "next/image";
 
 export function ApertureHero() {
   const ref = useRef<HTMLDivElement>(null);
-  // "end end" (not "end start") so progress reaches 1 exactly when the
-  // sticky child unpins — using "end start" here would push the back half
-  // of the reveal window past the point where the video is even still
-  // visible, and it would never be seen.
-  const { scrollYProgress } = useScroll({
-    target: ref,
-    offset: ["start start", "end end"],
-  });
+  // Framer's useScroll(target) derives progress from the target's own
+  // bounding rect, and that rect briefly destabilizes at the exact instant
+  // this element's sticky child un-pins (verified: revealOpacity would
+  // collapse toward 0 for a span of scroll right at that boundary — a
+  // rect-tracking edge case, not anything in our keyframes). Driving it
+  // from plain window.scrollY compared against precomputed pixel bounds
+  // sidesteps that entirely: it's just arithmetic, clamped by hand, with
+  // no dependency on whether the element is still intersecting anything.
+  const progress = useMotionValue(0);
 
-  const bgScale = useTransform(scrollYProgress, [0, 1], [1, 1.22]);
-  const bgBrightness = useTransform(scrollYProgress, [0, 1], [1, 1.85]);
+  useEffect(() => {
+    const el = ref.current;
+    if (!el) return;
+
+    let pinTop = 0;
+    let pinRange = 1;
+
+    const measure = () => {
+      const rect = el.getBoundingClientRect();
+      pinTop = rect.top + window.scrollY;
+      const unpinAt = pinTop + el.offsetHeight - window.innerHeight;
+      pinRange = Math.max(1, unpinAt - pinTop);
+    };
+
+    const onScroll = () => {
+      const raw = (window.scrollY - pinTop) / pinRange;
+      progress.set(Math.min(1, Math.max(0, raw)));
+    };
+
+    measure();
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", measure);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+      window.removeEventListener("resize", measure);
+    };
+  }, [progress]);
+
+  const bgScale = useTransform(progress, [0, 1], [1, 1.15]);
+
+  // Light builds as you scroll down, then fades back for contrast once the
+  // copy starts revealing — and reverses cleanly if you scroll back up,
+  // since this all reads straight off scroll position, not a timeline.
+  const bgBrightness = useTransform(progress, [0, 0.62, 0.8, 1], [1, 2.15, 0.85, 0.85]);
   const bgFilter = useTransform(bgBrightness, (v) => `brightness(${v})`);
 
-  const revealOpacity = useTransform(scrollYProgress, [0.8, 0.94], [0, 1]);
-  const revealRotateX = useTransform(scrollYProgress, [0.8, 1], [70, 0]);
-  const revealScale = useTransform(scrollYProgress, [0.8, 1], [0.6, 1]);
-  const revealZ = useTransform(scrollYProgress, [0.8, 1], [-500, 0]);
+  const glowOpacity = useTransform(progress, [0, 0.62, 0.8, 1], [0, 0.9, 0, 0]);
+  const scrimOpacity = useTransform(progress, [0.68, 0.85, 1], [0, 0.55, 0.55]);
+
+  const revealOpacity = useTransform(progress, [0.78, 0.92], [0, 1]);
+  const revealRotateX = useTransform(progress, [0.78, 0.94], [70, 0]);
+  const revealScale = useTransform(progress, [0.78, 0.94], [0.6, 1]);
+  const revealZ = useTransform(progress, [0.78, 0.94], [-500, 0]);
 
   return (
-    <div ref={ref} className="relative h-[280vh]">
+    <div ref={ref} className="relative h-[260vh]">
       <div className="sticky top-0 h-[100svh] overflow-hidden bg-ink">
-        {/* first-light loop, full-bleed, brightening as the camera pushes in */}
+        {/* still first-light frame — brightens/dims with scroll, never plays */}
         <motion.div style={{ scale: bgScale, filter: bgFilter }} className="absolute inset-0">
-          <video
-            className="h-full w-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="/media/00_hero_firstlight_poster.jpg"
-            preload="metadata"
-          >
-            <source src="/media/00_hero_firstlight.webm" type="video/webm" />
-            <source src="/media/00_hero_firstlight.mp4" type="video/mp4" />
-          </video>
+          <Image
+            src="/media/00_hero_firstlight_poster.jpg"
+            alt=""
+            fill
+            priority
+            className="object-cover"
+            sizes="100vw"
+          />
         </motion.div>
+
+        {/* additive glow that blooms in and fades back out with scroll */}
+        <motion.div
+          style={{ opacity: glowOpacity }}
+          className="pointer-events-none absolute left-1/2 top-[38%] h-[70vh] w-[70vh] -translate-x-1/2 -translate-y-1/2 rounded-full"
+          aria-hidden
+        >
+          <div
+            className="h-full w-full rounded-full"
+            style={{
+              background:
+                "radial-gradient(circle, rgba(251,227,216,0.9) 0%, rgba(201,58,30,0.55) 32%, rgba(201,58,30,0) 70%)",
+              mixBlendMode: "screen",
+            }}
+          />
+        </motion.div>
+
+        {/* dark scrim so the reveal always has contrast, regardless of the frame */}
+        <motion.div
+          style={{ opacity: scrimOpacity }}
+          className="pointer-events-none absolute inset-0 bg-ink"
+        />
 
         {/* the reveal: lockup + headline + footnote, held back until the very end */}
         <div
