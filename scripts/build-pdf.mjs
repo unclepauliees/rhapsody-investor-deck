@@ -78,7 +78,7 @@ try {
         if (!node.textContent.trim()) continue;
         const range = document.createRange(); range.selectNodeContents(node);
         for (const r of range.getClientRects()) {
-          const limit = node.parentElement.closest('footer') ? 801 : 749;
+          const limit = node.parentElement.closest('footer') ? 801 : slide.classList.contains('bookend') ? 780 : 749;
           if (r.left < bounds.left - 1 || r.right > bounds.right + 1 || r.top < bounds.top - 1 || r.bottom > bounds.top + limit) {
             problems.push({ slide: slide.getAttribute('aria-label'), text: node.textContent.slice(0, 100), top: r.top - bounds.top, bottom: r.bottom - bounds.top });
           }
@@ -93,6 +93,8 @@ try {
     if (!report.text.includes(phrase)) throw new Error(`Missing required copy: ${phrase}`);
   }
   if (/Appendix|\[email\]|\[name\]|10.40×|subsidiary/.test(report.text)) throw new Error('Stale copy in PDF');
+  if (await page.locator('figcaption').count()) throw new Error('Image captions must not appear in the PDF');
+  if (await page.locator('.bookend-lockup').count() !== 2) throw new Error('Both bookends require the full brand lockup');
   const pdf = resolve(output, 'rhapsody-program-overview.pdf');
   await page.pdf({ path: pdf, printBackground: true, preferCSSPageSize: true, tagged: true, outline: true });
   for (let i = 0; i < report.pages; i++) await page.locator('.slide').nth(i).screenshot({ path: resolve(review, `page-${String(i + 1).padStart(2, '0')}.png`) });

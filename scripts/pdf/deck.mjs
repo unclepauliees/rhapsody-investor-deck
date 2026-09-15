@@ -6,7 +6,7 @@ export function deck({ asset, constant }) {
   const item = (heading, text, cls = '') => `<article class="${cls}"><h3>${e(heading)}</h3>${p(text)}</article>`;
   const columns = (items, cls = '') => `<div class="columns ${cls}">${items.join('')}</div>`;
   const rows = (items, cls = '') => `<div class="rows ${cls}">${items.map(([label, body]) => `<article><h3>${e(label)}</h3>${p(body)}</article>`).join('')}</div>`;
-  const photo = (name, caption = 'Creative visualization') => `<figure class="photo">${img(name)}<figcaption>${e(caption)}</figcaption></figure>`;
+  const photo = (name) => `<figure class="photo">${img(name)}</figure>`;
   const stat = (value, label) => `<article><strong class="stat">${value}</strong>${p(label)}</article>`;
   const pages = [];
   const page = (label, cls, content) => {
@@ -14,12 +14,11 @@ export function deck({ asset, constant }) {
     pages.push(`<section class="slide ${cls}" aria-label="${e(label)}"><div class="content">${content}</div><footer><span>PROJECT RHAPSODY / PROGRAM OVERVIEW</span><span>${e(label)}</span><span>CONFIDENTIAL / SEPTEMBER 2026 / ${String(n).padStart(2, '0')}</span></footer></section>`);
   };
 
-  page('Cover', 'dark cover', `${img('media/00_hero_firstlight_poster.jpg', 'backdrop')}
-    <div class="cover-copy">${img('brand/emblem-on-dark.svg', 'cover-emblem')}
-    ${title('Project Rhapsody', 'cover-title')}
-    <h2>Nobody has played<br>this before.</h2>
-    ${p('Orbital Media Studio', 'cover-subtitle')}${p('A Symphony Space program.', 'cover-program')}</div>
-    ${p('Project Rhapsody is a working codename pending trademark clearance.', 'cover-note')}`);
+  page('Cover', 'dark bookend cover', `${img('media/00_hero_firstlight_poster.jpg', 'backdrop')}
+    ${p('[ PROGRAM OVERVIEW / SEPTEMBER 2026 / CONFIDENTIAL ]', 'bookend-meta')}
+    ${title('Nobody has<br>played this before.')}
+    ${img('brand/primary-glow-clear.svg', 'bookend-lockup')}
+    ${p('A Symphony Space program. "Project Rhapsody" is a working codename pending trademark clearance; the emblem is the durable asset.', 'bookend-note')}`);
 
   page('Thesis', 'split', `<div class="copy">${title('The live and<br>unrepeatable is<br><em>the last real luxury.</em>')}
     ${p('Every medium is defined by the physics of where it is made. Broadcast was invented in a studio. Social was invented in a feed. The next one gets invented in orbit.')}
@@ -49,7 +48,7 @@ export function deck({ asset, constant }) {
   page('Solution', 'split', `<div class="copy">${title('The first instrument<br><em>for orbit.</em>')}
     ${p('A house brings the work: a camera, a material, a digital canvas. It drops into a standard creative envelope in weeks, not years. The studio composes the window, captures the take, authenticates the master, and returns the media rights.')}
     ${rows(constant('06-solution','PILLARS').map(v => [v.name,v.body]), 'compact')}
-    </div>${photo('media/06_solution_poster.jpg', 'Orbital capture / visual reference')}`);
+    </div>${photo('media/06_solution_poster.jpg')}`);
 
   page('The Session', 'dark session', `${title('Invited. Composed. Flown.<br><em>Captured. Mastered.</em>')}
     ${p('Your session is yours alone.', 'standfirst')}
@@ -66,10 +65,10 @@ export function deck({ asset, constant }) {
     <strong class="stat giant">$60B</strong>${p('Luxury brand & media opportunity in orbit, opening 2030-2035.', 'standfirst')}
     ${p('The nearer comparison is what luxury already spends on cultural capital: pavilions, patronage, motorsport, the gala, the monograph. That budget buys being there first.')}
     ${rows(constant('09-market','RINGS').map(r => [r.name,r.body]), 'compact')}
-    </div>${photo('media/pdf-market-frame.jpg', 'Visual reference / opportunity framing from program overview')}`);
+    </div>${photo('media/pdf-market-frame.jpg')}`);
 
   page('The First Generation', 'dark generation', `<div class="generation-copy">${title('We are not<br>looking for<br>customers.<br><em>We are looking<br>for the first<br>generation.</em>')}</div>
-    <figure>${img('media/10_first_generation.png')}<figcaption>Artwork: Magdiel Lopez x Ken Hermann, 2018. Creative reference; no brand affiliation implied.</figcaption></figure>`);
+    <figure>${img('media/10_first_generation.png')}</figure>`);
 
   page('Economics', 'economics', `${title('Creative engagements.<br><em>Symphony revenue.</em>')}
     ${columns([stat('$30K','Estimated capacity rate / kg / month'),stat('4.6-7.5x',"4.6x Symphony's weighted-average subscription rate; 7.5x its Long-Term Plan"),stat('$58.3M','Modeled 2029 brand and advertising revenue, booked to Symphony')], 'metrics')}
@@ -87,7 +86,7 @@ export function deck({ asset, constant }) {
     ${p("The studio is a Symphony Space program operating on Symphony's reconfigurable, serviceable platforms. Symphony has a secured launch slot and signed demand from sovereign, commercial, and hyperscale customers before first flight.")}
     ${rows(constant('13-infrastructure','MILESTONES').map(v => [v.date,v.body]), 'compact timeline')}
     ${p("Rhapsody is not a separate entity and cannot issue equity or raise independently. Its budget is funded from Symphony's Seed; all program revenue books to Symphony.", 'note')}
-    </div>${photo('media/13_infrastructure.webp', 'Launch imagery / visual reference, not a depiction of Symphony hardware')}`);
+    </div>${photo('media/13_infrastructure.webp')}`);
 
   page('Governance', 'governance', `${title('Separate by design.<br><em>Clear boundaries protect the work.</em>')}
     ${p('Brand and data separation within Symphony Space. An operational framework, not a claim of legal separation.', 'standfirst')}
@@ -116,10 +115,12 @@ export function deck({ asset, constant }) {
     <aside><h3>Planned milestones</h3>${rows(constant('18-ask','MILESTONES').map(m => [m.date,m.body]), 'compact')}</aside></div>
     ${p('Target: $1M-$4M in total contracted value for two founding demonstrator works, not secured contracts or modeled 2028 revenue. Symphony models $1.075M in licensing and consulting in 2028; brand and advertising revenue starts in 2029. Rhapsody does not issue equity or raise independently. All program revenue books to Symphony.', 'note')}`);
 
-  page('First Light', 'dark close', `${img('media/00_hero_firstlight_poster.jpg','backdrop')}
-    ${img('brand/emblem-on-dark.svg','close-emblem')}${title('Improvised on Earth<br>for a century.<br><em>Now it leaves the planet.</em>')}
-    ${p('Project Rhapsody / Orbital Media Studio', 'standfirst')}${p('A Symphony Space program.', 'close-program')}
-    <a href="mailto:merry@symphony-space.com">Merry Walker<br><span>merry@symphony-space.com</span></a>
-    ${p('New York / Orbit', 'close-location')}`);
+  page('First Light', 'dark bookend close', `${img('media/00_hero_firstlight_poster.jpg','backdrop')}
+    ${p('[ PROGRAM OVERVIEW / SEPTEMBER 2026 / CONFIDENTIAL ]', 'bookend-meta')}
+    ${title('Improvised on Earth for a century.<br>Now it leaves the planet.')}
+    ${img('brand/primary-glow-clear.svg','bookend-lockup')}
+    <div class="bookend-contact">${p('A Symphony Space program.')}
+    <a href="mailto:merry@symphony-space.com">Merry Walker / merry@symphony-space.com</a>
+    ${p('New York / Orbit')}</div>`);
   return pages.join('\n');
 }
