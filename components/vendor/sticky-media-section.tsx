@@ -42,7 +42,10 @@ export function StickyMediaSection({
 
   const scale = useTransform(scrollYProgress, [0, 1], [1, 0.86]);
   const opacity = useTransform(scrollYProgress, [0, 0.75, 1], [1, 1, 0]);
-  const textOpacity = useTransform(scrollYProgress, [0, 0.3], [1, 0]);
+  // Keep the title fade on the same measured progress as the sticky frame.
+  const textOpacity = useTransform(scrollYProgress, (progress) =>
+    Math.max(0, 1 - progress / 0.3)
+  );
 
   return (
     <div ref={ref} className={`relative${mobileImgUrl ? " portrait-media" : ""}`}>

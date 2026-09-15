@@ -3,9 +3,10 @@
 The September 15, 2026 user-supplied portrait artwork appears below 768px.
 Desktop imagery and the landscape PDF remain unchanged. Native picture
 sources select the portrait without downloading a hidden desktop duplicate.
-Mobile section headlines use the incumbent Bodoni face at 32px and sit above
-an uninterrupted 9:16 image. These sections do not use sticky scaling or fading
-on phones. Original artwork lettering and credits remain intact.
+Mobile section headlines use the incumbent Bodoni face at 32px, overlaid on
+the 9:16 image with the existing contrast treatment. The sticky stage, image
+scaling, and headline fade remain active on phones. Portrait frames fit below
+the fixed navigation. Original artwork lettering and credits remain intact.
 
 | Section | Supplied source in Downloads |
 | --- | --- |
@@ -20,4 +21,4 @@ on phones. Original artwork lettering and credits remain intact.
 WebP assets are full-resolution conversions at quality 88, without alterations.
 They are creative imagery, not evidence of partnerships or flown hardware.
 Run `node scripts/test-mobile-media.mjs` after a root-path static build to check
-source selection, framing, text separation, navigation clearance, and overflow.
+source selection, framing, title overlays, sticky scroll motion, and overflow.
