@@ -18,6 +18,7 @@ export function SessionSection() {
     <SectionShell id="07-session" index="07">
       <StickyMediaSection
         videoUrl="/media/07_session.mp4"
+        webmUrl="/media/07_session.webm"
         posterUrl="/media/07_session_poster.jpg"
         subheading="[ The Session ]"
         heading="Invited. Composed. Flown. Captured. Mastered."

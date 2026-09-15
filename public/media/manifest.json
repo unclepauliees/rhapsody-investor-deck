@@ -67,6 +67,15 @@
       "note": "Replaced the original still (job b604d702, a precision-instrument macro) with an operator-supplied clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_377599585.mp4) — not a Higgsfield generation. Original 06_solution.webp removed. Re-encoded to H.264 (514KB) + VP9 WebM (369KB); poster extracted from frame 0."
     },
     {
+      "section": "07-session",
+      "file": "07_session.mp4 / 07_session.webm",
+      "status": "accepted",
+      "model": "seedance_2_5",
+      "job_id": "d330c3db-e791-4442-9efb-b952182455f5",
+      "shot": "Extreme macro of a mechanical camera shutter: fine metal blades iris open in one smooth motion, revealing warm dawn-colored light glowing behind the aperture, held for a moment, then the blades close again, settling into darkness.",
+      "note": "Operator supplied a reference GIF (/Users/paulestevez_ipx_temp/Downloads/cosmos_1270493928.gif) that turned out to be a literal sci-fi HUD/dashboard interface on inspection — targeting-reticle rings, telemetry readouts, on-screen labels like \"WIND SYSTEM\" and \"P1 449\". Declined outright: this hits three hard lines at once (no mission-control screens, no dashboard look, no sci-fi rendering), not a borderline case. Built the section around its original media-matrix concept instead — the mechanical shutter open/close — via Higgsfield text-to-video."
+    },
+    {
       "section": "09-market",
       "file": "09_market.webp",
       "status": "accepted",
@@ -77,7 +86,6 @@
     }
   ],
   "pending": [
-    "07-session (video)",
     "08-offer",
     "10-first-generation",
     "11-economics",
