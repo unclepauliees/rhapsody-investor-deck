@@ -38,6 +38,8 @@ yarn-error.log*
 
 # Firebase local state
 .firebase/
+output/pdf/
+.impeccable/review/
 firebase-debug*.log
 
 # typescript

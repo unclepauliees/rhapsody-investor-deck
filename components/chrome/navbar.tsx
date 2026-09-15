@@ -64,16 +64,16 @@ export function Navbar() {
           <span className="hidden font-mono-rh text-[10px] tracking-[0.24em] uppercase text-[color:rgba(236,231,218,0.55)] lg:block">
             Confidential · Sept 2026
           </span>
-          <button
-            type="button"
-            disabled
-            aria-label="Download PDF (coming soon)"
-            title="PDF coming soon"
-            className="inline-flex min-h-9 min-w-9 cursor-not-allowed items-center justify-center gap-2 font-mono-rh text-[10px] uppercase text-paper/45"
+          <a
+            href={withBasePath("/downloads/rhapsody-program-overview.pdf")}
+            download="Project-Rhapsody-Program-Overview.pdf"
+            aria-label="Download PDF"
+            title="Download the landscape program overview"
+            className="inline-flex min-h-9 min-w-9 items-center justify-center gap-2 font-mono-rh text-[10px] uppercase text-paper/80 hover:text-paper focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-paper"
           >
             <Download className="size-4" aria-hidden="true" />
             <span className="hidden sm:inline">Download PDF</span>
-          </button>
+          </a>
         </div>
       </nav>
 
