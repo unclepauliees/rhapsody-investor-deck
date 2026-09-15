@@ -79,10 +79,10 @@
       "section": "08-offer",
       "file": "08_offer.webp",
       "status": "accepted",
-      "model": "gpt_image_2_5",
-      "job_id": "d7204479-6d36-483c-a6f1-521659a173b2",
-      "shot": "Three objects on heavy cream paper, overhead flat-lay: a folded formal invitation card, a small circular wax seal in vermilion, a compact archival slipcase in muted grey board — Session, Residency, Master.",
-      "note": "Operator supplied a reference image of a retina-scan biometric HUD overlay on an eye (circular targeting rings, digital scan-line UI, tech labels). Declined: same category as the Section 07 rejection — sci-fi/dashboard rendering — and would have awkwardly repeated the eye motif already used in Section 06. Built the section around its original media-matrix concept instead, which maps directly onto the three named products in the copy."
+      "model": "operator-supplied (not generated)",
+      "job_id": null,
+      "shot": "A retina-scan biometric HUD overlay on a human eye — circular targeting rings, digital scan-line UI, tech labels.",
+      "note": "Operator's chosen image (/Users/paulestevez_ipx_temp/Downloads/cosmos_439608860.jpeg), used directly per explicit direction — this is the operator's own Brand OS and they have final authority to override its stated hard lines at will; an earlier generated alternative avoiding the HUD look was replaced with this on request. Flagging purely as a technical note, not a style objection: source file is only 383x265px, low-res for a full-bleed hero frame at desktop widths — may read soft when scaled up. Say the word if a higher-res version should be sourced or regenerated in this style."
     },
     {
       "section": "09-market",
