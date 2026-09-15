@@ -128,10 +128,18 @@
       "job_id": null,
       "shot": "A rocket engine cluster firing at night — dozens of engine bells in a ring pattern, bright exhaust plumes, billowing orange-lit smoke.",
       "note": "Operator's chosen image (/Users/paulestevez_ipx_temp/Downloads/cosmos_672339812.jpeg), used directly. No visible photographer credit or company logo, so no third-party IP objection — though the engine-cluster arrangement closely resembles a specific real launch vehicle (visually reads as SpaceX's Starship/Super Heavy) and could be recognized as such by viewers even without a mark. Noted for awareness, not held as a blocker: this is a literal rocket photo on the slide about the parent's platform, which the build note for this section says should be named 'in words only... no rocket, no orbit diagram' — that's the operator's own Brand OS call to keep or waive."
+    },
+    {
+      "section": "14-governance",
+      "file": "14_governance.mp4 / 14_governance.webm",
+      "status": "accepted",
+      "model": "operator-supplied (not generated)",
+      "job_id": null,
+      "shot": "A blueprint/wireframe HUD readout of a mechanical module: a rotating cyan wireframe sphere with internal gearing on the left, technical schematic panels with part numbers, codes, and status bars on the right.",
+      "note": "Operator's chosen clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_1727445765.gif), used directly. Same category as Section 12 — a sci-fi HUD/blueprint look that conflicts with the deck's own dashboard/sci-fi hard lines, which is the operator's Brand OS to override. No visible artist credit or real trademarks. Converted from GIF to H.264 (156KB) + VP9 WebM (200KB); poster from frame 0."
     }
   ],
   "pending": [
-    "14-governance",
     "15-traction",
     "16-roadmap (video)",
     "17-team",

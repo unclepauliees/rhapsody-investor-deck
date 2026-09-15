@@ -14,7 +14,9 @@ export function GovernanceSection() {
   return (
     <SectionShell id="14-governance" index="14">
       <StickyMediaSection
-        imgUrl="/media/14_governance.webp"
+        videoUrl="/media/14_governance.mp4"
+        webmUrl="/media/14_governance.webm"
+        posterUrl="/media/14_governance_poster.jpg"
         subheading="[ Governance ]"
         heading="Separate by design. That is the point."
       >
