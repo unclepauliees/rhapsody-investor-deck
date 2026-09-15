@@ -155,10 +155,18 @@
       "job_id": "ace83e1d-5c92-47df-b634-8b4ff13bedae",
       "shot": "Monochrome photograph of an unbranded, sculptural high-performance concept vehicle on the cratered lunar surface, Earth rising large in the black sky behind it, long dramatic shadow across the regolith.",
       "note": "Operator referenced /Users/paulestevez_ipx_temp/Downloads/0cbb1762_e44b_497b_b4b5_349a1f516b65_16_9.png, a real Aston Martin Valkyrie (Aston Martin wing badge visible on the nose) staged on the moon. Declined to use that image directly \u2014 same category as the Section 10 decision: a real, trademarked third-party product design and logo, which is not the operator's own Brand OS to waive. Generated an original alternative matching the mood and composition (unbranded concept car, lunar surface, Earth backdrop) with no visible logos or manufacturer marks. Converted to WebP, resized to 1920px wide (201KB)."
+    },
+    {
+      "section": "17-team",
+      "file": "17_team.webp",
+      "status": "accepted",
+      "model": "operator-supplied (not generated)",
+      "job_id": null,
+      "shot": "A whimsical stock-photo-style composite: an astronaut lounging in a teal mid-century armchair on a rocky desert/lunar surface, reading a fictional newspaper ('Astronoticcas'), with a side table lamp and framed photo, a discount price tag on the chair arm, and a lander in the background.",
+      "note": "Operator's chosen reference (/Users/paulestevez_ipx_temp/Downloads/cosmos_41249041_16_9.png), used directly. No real trademarks or brand logos \u2014 the newspaper masthead is fictional. This is a tonal/style call (playful stock-composite vs. the deck's otherwise serious register), which is the operator's Brand OS to set, not a copyright/IP concern, so used without objection. Converted to WebP, resized to 1920px wide (267KB)."
     }
   ],
   "pending": [
-    "17-team",
     "18-ask",
     "19-close (video)",
     "appendix"
