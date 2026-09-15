@@ -92,11 +92,27 @@
       "job_id": null,
       "shot": "A stylized comet against a dense starfield, morphing across several rendering styles through the clip (photoreal blue comet, painted flame-comet illustration, nebula streak with a bright star burst, blue-green comet).",
       "note": "Replaced the earlier still (job c54045d2) with an operator-supplied clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_616473186.mp4) — not a Higgsfield generation. Source is 4:3 (960x720); StickyMediaSection's 16:9 aspect-video container crops it via object-cover. Re-encoded to H.264 (1.37MB) + VP9 WebM (1.17MB); poster from frame 0."
+    },
+    {
+      "section": "10-first-generation",
+      "file": "10_first_generation.webp",
+      "status": "accepted",
+      "model": "gpt_image_2_5",
+      "job_id": "4523cd45-7295-4ef1-9d78-81690cd58980",
+      "shot": "A white spacesuit-style jacket, worn and well-traveled, covered in an eclectic collage of small unbranded fabric patches and pins, against deep space with a soft starfield.",
+      "note": "Operator supplied a reference image (/Users/paulestevez_ipx_temp/Downloads/cosmos_1041230996_16_9.png) — a credited artist collage (\"Magdiel Lopez x KenHermann (c) 2018\") built entirely out of six real companies' trademarks (Gucci, Versace, Supreme, Fila, McDonald's, Louis Vuitton). Declined even under operator override and explicit \"I'll take the risk\": unlike the Section 08 case, this isn't the operator's own Brand OS to waive — it's a third party's copyrighted work plus six unrelated companies' marks, none of whom are party to this decision. Generated an alternative capturing the same \"eclectic, well-traveled uniform\" feeling with blank/unbranded patches instead. Note: the result shows a visible face, which the rest of the deck's assets avoid (matches the Team slide's own build note) — flagged, not corrected, per operator's standing direction to stop second-guessing style calls."
+    },
+    {
+      "section": "11-economics",
+      "file": "11_economics.webp",
+      "status": "accepted",
+      "model": "operator-supplied (not generated)",
+      "job_id": null,
+      "shot": "A spherical orbital recording drone/camera, heavily detailed hard-surface CGI concept-art render on a plain grey backdrop — mechanical housings, a large purple-glowing lens, diagram callouts, weathered paint.",
+      "note": "Operator's chosen image (/Users/paulestevez_ipx_temp/Downloads/cosmos_983883891_16_9.png), used directly. No visible artist credit/signature and no real third-party trademarks (the \"ORBITAL RECORDING ROBOT\" label is fictional prop text, not a brand) — used without objection, unlike the Section 10 case."
     }
   ],
   "pending": [
-    "10-first-generation",
-    "11-economics",
     "12-landscape",
     "13-infrastructure",
     "14-governance",
