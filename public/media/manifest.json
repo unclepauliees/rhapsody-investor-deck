@@ -9,7 +9,7 @@
       "status": "accepted",
       "model": "seedance_2_5",
       "job_id": "56794cb5-0cc1-42d1-b329-9ad8f9a17010",
-      "shot": "Slow dawn bloom over a planet's limb: a thin luminous vermilion arc across the lower third of a black frame, one bright point of light breaking over its apex, blooming and settling — seamless 10s loop.",
+      "shot": "Slow dawn bloom over a planet's limb: a thin luminous vermilion arc across the lower third of a black frame, one bright point of light breaking over its apex, blooming and settling \u2014 seamless 10s loop.",
       "note": "Reference image supplied by operator (an existing Save the Date asset, /Users/paulestevez_ipx_temp/Downloads/hf_20260910_120734_0801ef2b-7c7d-4d5a-b809-5cb48d9498d7.png) used as start_image. Transcoded from source HEVC to H.264 (846KB) + VP9 WebM (288KB); poster extracted from frame 0."
     },
     {
@@ -19,7 +19,7 @@
       "model": "seedance_2_5",
       "job_id": "ed480aee-2ddf-40a6-95ca-75382a3863bd",
       "shot": "In the vacuum of open space: a matte-black robotic arm's gripper opens and releases a matte-white unbranded sneaker, which drifts free and tumbles weightlessly away. The sun blazes low and enormous behind the rig, its hard flare sweeping across the arm's joints as the shoe releases, then settling to reveal the sneaker sharp in macro focus against the blackness of space with the sun a brilliant point of light and faint stars visible.",
-      "note": "Originally generated for Section 02 (Highlights); moved to Section 01 (Thesis) per operator direction, files renamed 02_highlights.* -> 01_thesis.* accordingly. Superseded predecessor job 4ce08079 (interior-studio version) per operator feedback: needed to read as outside in space with the sun as backdrop, and the arm needed to be visibly releasing the shoe into position for the shot rather than just holding it static. Operator-directed departure from the original media-matrix still concept for this shot — reimagines a reference BTS product-rig clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_1818242565.mp4) with a robot arm instead of human hands. Pure text-to-video (no reference image); Higgsfield offered its \"IN THE DARK\" preset for this prompt and it was declined in favor of the literal prompt. Transcoded from source HEVC to H.264 (1.35MB) + VP9 WebM (900KB); poster extracted from a mid-tumble frame. Note: the sneaker silhouette reads close to a real commercial shoe design (no visible logo/wordmark) — worth a glance before external use given it's an investor-facing asset."
+      "note": "Originally generated for Section 02 (Highlights); moved to Section 01 (Thesis) per operator direction, files renamed 02_highlights.* -> 01_thesis.* accordingly. Superseded predecessor job 4ce08079 (interior-studio version) per operator feedback: needed to read as outside in space with the sun as backdrop, and the arm needed to be visibly releasing the shoe into position for the shot rather than just holding it static. Operator-directed departure from the original media-matrix still concept for this shot \u2014 reimagines a reference BTS product-rig clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_1818242565.mp4) with a robot arm instead of human hands. Pure text-to-video (no reference image); Higgsfield offered its \"IN THE DARK\" preset for this prompt and it was declined in favor of the literal prompt. Transcoded from source HEVC to H.264 (1.35MB) + VP9 WebM (900KB); poster extracted from a mid-tumble frame. Note: the sneaker silhouette reads close to a real commercial shoe design (no visible logo/wordmark) \u2014 worth a glance before external use given it's an investor-facing asset."
     },
     {
       "section": "02-highlights",
@@ -27,8 +27,8 @@
       "status": "accepted",
       "model": "gpt_image_2_5",
       "job_id": "f50f69b8-4d0b-4d36-aa96-8f7bb68a5b5d",
-      "shot": "A weathered, hand-modified vintage medium-format camera on a plain grey studio backdrop — hand-cut wooden gear-shaped discs bolted to its lens barrel, a small hairline vermilion painted disc marking, a fine metal ball-chain lanyard, hand-lettered serial numbers on the white-painted chassis. No brand names, no logos, no wordmarks, no agency insignia.",
-      "note": "Operator supplied a reference image (/Users/paulestevez_ipx_temp/Downloads/cosmos_324186223_16_9.png) of a similarly kit-bashed vintage camera prop carrying a visible NASA logo and NASA-red color scheme. Declined to use it directly or replicate the branding — real trademark exposure plus a direct violation of the deck's own hard line (no aerospace-agency association, ever). Regenerated the same weathered/hand-modified aesthetic with all insignia stripped and the accent recolored to Rhapsody vermilion (#C93A1E)."
+      "shot": "A weathered, hand-modified vintage medium-format camera on a plain grey studio backdrop \u2014 hand-cut wooden gear-shaped discs bolted to its lens barrel, a small hairline vermilion painted disc marking, a fine metal ball-chain lanyard, hand-lettered serial numbers on the white-painted chassis. No brand names, no logos, no wordmarks, no agency insignia.",
+      "note": "Operator supplied a reference image (/Users/paulestevez_ipx_temp/Downloads/cosmos_324186223_16_9.png) of a similarly kit-bashed vintage camera prop carrying a visible NASA logo and NASA-red color scheme. Declined to use it directly or replicate the branding \u2014 real trademark exposure plus a direct violation of the deck's own hard line (no aerospace-agency association, ever). Regenerated the same weathered/hand-modified aesthetic with all insignia stripped and the accent recolored to Rhapsody vermilion (#C93A1E)."
     },
     {
       "section": "03-why-now",
@@ -37,7 +37,7 @@
       "model": "gpt_image_2_5",
       "job_id": "cec5f0b3-e086-40be-a2bf-82f5a29a9689",
       "shot": "Extreme motion-blur streaks of light racing across a black void toward a thin luminous horizon line, where a planet's atmosphere glows faintly in muted blue-green at the edge of frame. Pure light and velocity, no visible spacecraft or hardware.",
-      "note": "Operator supplied a reference image (/Users/paulestevez_ipx_temp/Downloads/cosmos_134875125_16_9.png) of a literal satellite/spacecraft exterior (visible hull, radiator panels, mechanical hardware) racing over Earth's limb. Declined to use it or replicate the hardware — this is not a trademark issue like the Section 02 case, it's the exact category cliche the deck's entire premise exists to avoid (Spine hard line: no satellites, no spacecraft, no solar panels or antennae, ever). Kept only the kinetic motion-streak and atmospheric-glow mood, stripped of all mechanical/spacecraft content."
+      "note": "Operator supplied a reference image (/Users/paulestevez_ipx_temp/Downloads/cosmos_134875125_16_9.png) of a literal satellite/spacecraft exterior (visible hull, radiator panels, mechanical hardware) racing over Earth's limb. Declined to use it or replicate the hardware \u2014 this is not a trademark issue like the Section 02 case, it's the exact category cliche the deck's entire premise exists to avoid (Spine hard line: no satellites, no spacecraft, no solar panels or antennae, ever). Kept only the kinetic motion-streak and atmospheric-glow mood, stripped of all mechanical/spacecraft content."
     },
     {
       "section": "04-third-movement",
@@ -46,7 +46,7 @@
       "model": "operator-supplied (not generated)",
       "job_id": null,
       "shot": "Macro of a camera lens iris/aperture, a subtle rack focus across the glass with faint red light flecks reflecting off the elements.",
-      "note": "Operator-supplied clip (/Users/paulestevez_ipx_temp/Downloads/Camera Vid.mp4), used as-is — not a Higgsfield generation. Re-encoded from source H.264 (3.79MB, 3.47s) to a smaller H.264 (1.78MB) + VP9 WebM (801KB); poster extracted from frame 0. Clip is short (3.47s) and loops via the <video loop> attribute rather than being extended to the spec's usual 8-10s target."
+      "note": "Operator-supplied clip (/Users/paulestevez_ipx_temp/Downloads/Camera Vid.mp4), used as-is \u2014 not a Higgsfield generation. Re-encoded from source H.264 (3.79MB, 3.47s) to a smaller H.264 (1.78MB) + VP9 WebM (801KB); poster extracted from frame 0. Clip is short (3.47s) and loops via the <video loop> attribute rather than being extended to the spec's usual 8-10s target."
     },
     {
       "section": "05-problem",
@@ -54,8 +54,8 @@
       "status": "accepted",
       "model": "gpt_image_2_5",
       "job_id": "1e64f203-cfe5-477d-b046-d04fe7b44c7c",
-      "shot": "An unbranded glass bottle with a plain blank label, mounted on a simple black tripod stand, photographed against the curve of the Earth from near-space altitude — clouds below, blackness above. Wide-angle lens distortion, a single one-off marketing-stunt photograph.",
-      "note": "Operator supplied a real product marketing-stunt photo (/Users/paulestevez_ipx_temp/Downloads/cosmos_1924549645_16_9.png, a Heinz ketchup bottle sent to the edge of space) as the reference — thematically perfect for this slide's exact critique of one-off space stunts, but carrying a visible HEINZ logo/wordmark. Declined to use it directly; recreated the identical composition with the bottle fully unbranded (blank label, no text). The genericized version arguably makes the slide's point better than a real branded example would."
+      "shot": "An unbranded glass bottle with a plain blank label, mounted on a simple black tripod stand, photographed against the curve of the Earth from near-space altitude \u2014 clouds below, blackness above. Wide-angle lens distortion, a single one-off marketing-stunt photograph.",
+      "note": "Operator supplied a real product marketing-stunt photo (/Users/paulestevez_ipx_temp/Downloads/cosmos_1924549645_16_9.png, a Heinz ketchup bottle sent to the edge of space) as the reference \u2014 thematically perfect for this slide's exact critique of one-off space stunts, but carrying a visible HEINZ logo/wordmark. Declined to use it directly; recreated the identical composition with the bottle fully unbranded (blank label, no text). The genericized version arguably makes the slide's point better than a real branded example would."
     },
     {
       "section": "06-solution",
@@ -63,8 +63,8 @@
       "status": "accepted",
       "model": "operator-supplied (not generated)",
       "job_id": null,
-      "shot": "A camera lens iris/aperture closing in mechanical macro, match-cutting into a human eye's iris — the instrument and the eye as the same shape.",
-      "note": "Replaced the original still (job b604d702, a precision-instrument macro) with an operator-supplied clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_377599585.mp4) — not a Higgsfield generation. Original 06_solution.webp removed. Re-encoded to H.264 (514KB) + VP9 WebM (369KB); poster extracted from frame 0."
+      "shot": "A camera lens iris/aperture closing in mechanical macro, match-cutting into a human eye's iris \u2014 the instrument and the eye as the same shape.",
+      "note": "Replaced the original still (job b604d702, a precision-instrument macro) with an operator-supplied clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_377599585.mp4) \u2014 not a Higgsfield generation. Original 06_solution.webp removed. Re-encoded to H.264 (514KB) + VP9 WebM (369KB); poster extracted from frame 0."
     },
     {
       "section": "07-session",
@@ -73,7 +73,7 @@
       "model": "seedance_2_5",
       "job_id": "d330c3db-e791-4442-9efb-b952182455f5",
       "shot": "Extreme macro of a mechanical camera shutter: fine metal blades iris open in one smooth motion, revealing warm dawn-colored light glowing behind the aperture, held for a moment, then the blades close again, settling into darkness.",
-      "note": "Operator supplied a reference GIF (/Users/paulestevez_ipx_temp/Downloads/cosmos_1270493928.gif) that turned out to be a literal sci-fi HUD/dashboard interface on inspection — targeting-reticle rings, telemetry readouts, on-screen labels like \"WIND SYSTEM\" and \"P1 449\". Declined outright: this hits three hard lines at once (no mission-control screens, no dashboard look, no sci-fi rendering), not a borderline case. Built the section around its original media-matrix concept instead — the mechanical shutter open/close — via Higgsfield text-to-video."
+      "note": "Operator supplied a reference GIF (/Users/paulestevez_ipx_temp/Downloads/cosmos_1270493928.gif) that turned out to be a literal sci-fi HUD/dashboard interface on inspection \u2014 targeting-reticle rings, telemetry readouts, on-screen labels like \"WIND SYSTEM\" and \"P1 449\". Declined outright: this hits three hard lines at once (no mission-control screens, no dashboard look, no sci-fi rendering), not a borderline case. Built the section around its original media-matrix concept instead \u2014 the mechanical shutter open/close \u2014 via Higgsfield text-to-video."
     },
     {
       "section": "08-offer",
@@ -81,8 +81,8 @@
       "status": "accepted",
       "model": "operator-supplied (not generated)",
       "job_id": null,
-      "shot": "A retina-scan biometric HUD overlay on a human eye — circular targeting rings, digital scan-line UI, tech labels.",
-      "note": "Operator's chosen image (/Users/paulestevez_ipx_temp/Downloads/cosmos_439608860.jpeg), used directly per explicit direction — this is the operator's own Brand OS and they have final authority to override its stated hard lines at will; an earlier generated alternative avoiding the HUD look was replaced with this on request. Flagging purely as a technical note, not a style objection: source file is only 383x265px, low-res for a full-bleed hero frame at desktop widths — may read soft when scaled up. Say the word if a higher-res version should be sourced or regenerated in this style."
+      "shot": "A retina-scan biometric HUD overlay on a human eye \u2014 circular targeting rings, digital scan-line UI, tech labels.",
+      "note": "Operator's chosen image (/Users/paulestevez_ipx_temp/Downloads/cosmos_439608860.jpeg), used directly per explicit direction \u2014 this is the operator's own Brand OS and they have final authority to override its stated hard lines at will; an earlier generated alternative avoiding the HUD look was replaced with this on request. Flagging purely as a technical note, not a style objection: source file is only 383x265px, low-res for a full-bleed hero frame at desktop widths \u2014 may read soft when scaled up. Say the word if a higher-res version should be sourced or regenerated in this style."
     },
     {
       "section": "09-market",
@@ -91,7 +91,7 @@
       "model": "operator-supplied (not generated)",
       "job_id": null,
       "shot": "A stylized comet against a dense starfield, morphing across several rendering styles through the clip (photoreal blue comet, painted flame-comet illustration, nebula streak with a bright star burst, blue-green comet).",
-      "note": "Replaced the earlier still (job c54045d2) with an operator-supplied clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_616473186.mp4) — not a Higgsfield generation. Source is 4:3 (960x720); StickyMediaSection's 16:9 aspect-video container crops it via object-cover. Re-encoded to H.264 (1.37MB) + VP9 WebM (1.17MB); poster from frame 0."
+      "note": "Replaced the earlier still (job c54045d2) with an operator-supplied clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_616473186.mp4) \u2014 not a Higgsfield generation. Source is 4:3 (960x720); StickyMediaSection's 16:9 aspect-video container crops it via object-cover. Re-encoded to H.264 (1.37MB) + VP9 WebM (1.17MB); poster from frame 0."
     },
     {
       "section": "10-first-generation",
@@ -100,7 +100,7 @@
       "model": "gpt_image_2_5",
       "job_id": "4523cd45-7295-4ef1-9d78-81690cd58980",
       "shot": "A white spacesuit-style jacket, worn and well-traveled, covered in an eclectic collage of small unbranded fabric patches and pins, against deep space with a soft starfield.",
-      "note": "Operator supplied a reference image (/Users/paulestevez_ipx_temp/Downloads/cosmos_1041230996_16_9.png) — a credited artist collage (\"Magdiel Lopez x KenHermann (c) 2018\") built entirely out of six real companies' trademarks (Gucci, Versace, Supreme, Fila, McDonald's, Louis Vuitton). Declined even under operator override and explicit \"I'll take the risk\": unlike the Section 08 case, this isn't the operator's own Brand OS to waive — it's a third party's copyrighted work plus six unrelated companies' marks, none of whom are party to this decision. Generated an alternative capturing the same \"eclectic, well-traveled uniform\" feeling with blank/unbranded patches instead. Note: the result shows a visible face, which the rest of the deck's assets avoid (matches the Team slide's own build note) — flagged, not corrected, per operator's standing direction to stop second-guessing style calls."
+      "note": "Operator supplied a reference image (/Users/paulestevez_ipx_temp/Downloads/cosmos_1041230996_16_9.png) \u2014 a credited artist collage (\"Magdiel Lopez x KenHermann (c) 2018\") built entirely out of six real companies' trademarks (Gucci, Versace, Supreme, Fila, McDonald's, Louis Vuitton). Declined even under operator override and explicit \"I'll take the risk\": unlike the Section 08 case, this isn't the operator's own Brand OS to waive \u2014 it's a third party's copyrighted work plus six unrelated companies' marks, none of whom are party to this decision. Generated an alternative capturing the same \"eclectic, well-traveled uniform\" feeling with blank/unbranded patches instead. Note: the result shows a visible face, which the rest of the deck's assets avoid (matches the Team slide's own build note) \u2014 flagged, not corrected, per operator's standing direction to stop second-guessing style calls."
     },
     {
       "section": "11-economics",
@@ -108,8 +108,8 @@
       "status": "accepted",
       "model": "operator-supplied (not generated)",
       "job_id": null,
-      "shot": "A spherical orbital recording drone/camera, heavily detailed hard-surface CGI concept-art render on a plain grey backdrop — mechanical housings, a large purple-glowing lens, diagram callouts, weathered paint.",
-      "note": "Operator's chosen image (/Users/paulestevez_ipx_temp/Downloads/cosmos_983883891_16_9.png), used directly. No visible artist credit/signature and no real third-party trademarks (the \"ORBITAL RECORDING ROBOT\" label is fictional prop text, not a brand) — used without objection, unlike the Section 10 case."
+      "shot": "A spherical orbital recording drone/camera, heavily detailed hard-surface CGI concept-art render on a plain grey backdrop \u2014 mechanical housings, a large purple-glowing lens, diagram callouts, weathered paint.",
+      "note": "Operator's chosen image (/Users/paulestevez_ipx_temp/Downloads/cosmos_983883891_16_9.png), used directly. No visible artist credit/signature and no real third-party trademarks (the \"ORBITAL RECORDING ROBOT\" label is fictional prop text, not a brand) \u2014 used without objection, unlike the Section 10 case."
     },
     {
       "section": "12-landscape",
@@ -118,7 +118,7 @@
       "model": "operator-supplied (not generated)",
       "job_id": null,
       "shot": "A sci-fi HUD/dashboard interface: targeting-reticle rings pulsing red/gold, telemetry readouts and on-screen labels along the edges.",
-      "note": "Operator's chosen clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_1270493928.gif) — the same reference declined for Section 07 on brand-OS grounds (mission-control/dashboard/sci-fi rendering hard lines). Used here without objection: those hard lines are the operator's own Brand OS, theirs to override, and there's no third-party trademark or credit issue with this asset (unlike the Section 10 case). Converted from GIF to H.264 (417KB) + VP9 WebM (304KB); poster from frame 0."
+      "note": "Operator's chosen clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_1270493928.gif) \u2014 the same reference declined for Section 07 on brand-OS grounds (mission-control/dashboard/sci-fi rendering hard lines). Used here without objection: those hard lines are the operator's own Brand OS, theirs to override, and there's no third-party trademark or credit issue with this asset (unlike the Section 10 case). Converted from GIF to H.264 (417KB) + VP9 WebM (304KB); poster from frame 0."
     },
     {
       "section": "13-infrastructure",
@@ -126,8 +126,8 @@
       "status": "accepted",
       "model": "operator-supplied (not generated)",
       "job_id": null,
-      "shot": "A rocket engine cluster firing at night — dozens of engine bells in a ring pattern, bright exhaust plumes, billowing orange-lit smoke.",
-      "note": "Operator's chosen image (/Users/paulestevez_ipx_temp/Downloads/cosmos_672339812.jpeg), used directly. No visible photographer credit or company logo, so no third-party IP objection — though the engine-cluster arrangement closely resembles a specific real launch vehicle (visually reads as SpaceX's Starship/Super Heavy) and could be recognized as such by viewers even without a mark. Noted for awareness, not held as a blocker: this is a literal rocket photo on the slide about the parent's platform, which the build note for this section says should be named 'in words only... no rocket, no orbit diagram' — that's the operator's own Brand OS call to keep or waive."
+      "shot": "A rocket engine cluster firing at night \u2014 dozens of engine bells in a ring pattern, bright exhaust plumes, billowing orange-lit smoke.",
+      "note": "Operator's chosen image (/Users/paulestevez_ipx_temp/Downloads/cosmos_672339812.jpeg), used directly. No visible photographer credit or company logo, so no third-party IP objection \u2014 though the engine-cluster arrangement closely resembles a specific real launch vehicle (visually reads as SpaceX's Starship/Super Heavy) and could be recognized as such by viewers even without a mark. Noted for awareness, not held as a blocker: this is a literal rocket photo on the slide about the parent's platform, which the build note for this section says should be named 'in words only... no rocket, no orbit diagram' \u2014 that's the operator's own Brand OS call to keep or waive."
     },
     {
       "section": "14-governance",
@@ -136,11 +136,19 @@
       "model": "operator-supplied (not generated)",
       "job_id": null,
       "shot": "A blueprint/wireframe HUD readout of a mechanical module: a rotating cyan wireframe sphere with internal gearing on the left, technical schematic panels with part numbers, codes, and status bars on the right.",
-      "note": "Operator's chosen clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_1727445765.gif), used directly. Same category as Section 12 — a sci-fi HUD/blueprint look that conflicts with the deck's own dashboard/sci-fi hard lines, which is the operator's Brand OS to override. No visible artist credit or real trademarks. Converted from GIF to H.264 (156KB) + VP9 WebM (200KB); poster from frame 0."
+      "note": "Operator's chosen clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_1727445765.gif), used directly. Same category as Section 12 \u2014 a sci-fi HUD/blueprint look that conflicts with the deck's own dashboard/sci-fi hard lines, which is the operator's Brand OS to override. No visible artist credit or real trademarks. Converted from GIF to H.264 (156KB) + VP9 WebM (200KB); poster from frame 0."
+    },
+    {
+      "section": "15-traction",
+      "file": "15_traction.mp4 / 15_traction.webm",
+      "status": "accepted",
+      "model": "operator-supplied (not generated)",
+      "job_id": null,
+      "shot": "A macro shot of a human eye undergoing a biometric retina/iris scan, overlaid with a cyan HUD readout \u2014 concentric scan rings, tracking brackets, and small telemetry readouts around the eye.",
+      "note": "Operator's chosen clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_901188061.gif), used directly. Same biometric-HUD category as Section 08 \u2014 a sci-fi/surveillance-HUD look that conflicts with the deck's own Brand OS hard lines, which is the operator's own document to override (per operator's explicit instruction to stop enforcing it literally). No visible artist credit or real trademarks. Converted from GIF (383x265, 15 frames, 1.65s) to H.264 (76KB) + VP9 WebM (64KB); poster from frame 0. Source GIF is low native resolution."
     }
   ],
   "pending": [
-    "15-traction",
     "16-roadmap (video)",
     "17-team",
     "18-ask",

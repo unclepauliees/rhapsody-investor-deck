@@ -6,7 +6,9 @@ export function TractionSection() {
   return (
     <SectionShell id="15-traction" index="15">
       <StickyMediaSection
-        imgUrl="/media/15_traction.webp"
+        videoUrl="/media/15_traction.mp4"
+        webmUrl="/media/15_traction.webm"
+        posterUrl="/media/15_traction_poster.jpg"
         subheading="[ Traction ]"
         heading="The studio opens in October. The first works fly in 2028."
       >
