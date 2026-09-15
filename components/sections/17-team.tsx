@@ -14,9 +14,9 @@ const TEAM = [
     proof: "ORBES is Symphony's orbital capture and video partner. Anna is a space robotics founder building ORB, an autonomous free-flying camera. USC creative technologist; has filmed in zero gravity and for the IMAX giant screen.",
   },
   {
-    name: "Nicole Marzan & Kat Nelson",
+    name: "Nicole Marzan & Kate Nelson",
     role: "The Concrete Group · Public Relations for Symphony Space",
-    proof: "Nicole and Kat handle public relations for Symphony, including launch communications and press for the Rhapsody program. Nicole is Founder & CEO of The Concrete Group.",
+    proof: "Nicole and Kate handle public relations for Symphony, including launch communications and press for the Rhapsody program. Nicole is Founder & CEO of The Concrete Group.",
   },
   {
     name: "Marcus Glover",

@@ -48,7 +48,7 @@ The complete prior deck is preserved in git at `b684fc4`.
 - "Program Overview" replaces "Investor Presentation" throughout the UI.
 - Appendix A-E is always visible, rather than hidden behind accordion
   headings, with a direct link from Economics to Appendix A.
-- Nicole Marzan and Kat Nelson are credited together under The Concrete
-  Group. Kat's spelling and surname were subsequently confirmed by Paul.
+- Nicole Marzan and Kate Nelson are credited together under The Concrete
+  Group. Kate's spelling and surname were subsequently confirmed by Paul.
 - The final landscape PDF will be provided separately after content
   approval. The existing download placeholder remains disabled.
