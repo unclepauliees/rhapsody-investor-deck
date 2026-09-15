@@ -12,8 +12,7 @@ export function RoadmapSection() {
   return (
     <SectionShell id="16-roadmap" index="16">
       <StickyMediaSection
-        videoUrl="/media/16_roadmap.mp4"
-        posterUrl="/media/16_roadmap_poster.jpg"
+        imgUrl="/media/16_roadmap.webp"
         subheading="[ Roadmap ]"
         heading="From an instrument to a movement."
       >

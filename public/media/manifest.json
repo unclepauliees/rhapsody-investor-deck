@@ -146,10 +146,18 @@
       "job_id": null,
       "shot": "A macro shot of a human eye undergoing a biometric retina/iris scan, overlaid with a cyan HUD readout \u2014 concentric scan rings, tracking brackets, and small telemetry readouts around the eye.",
       "note": "Operator's chosen clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_901188061.gif), used directly. Same biometric-HUD category as Section 08 \u2014 a sci-fi/surveillance-HUD look that conflicts with the deck's own Brand OS hard lines, which is the operator's own document to override (per operator's explicit instruction to stop enforcing it literally). No visible artist credit or real trademarks. Converted from GIF (383x265, 15 frames, 1.65s) to H.264 (76KB) + VP9 WebM (64KB); poster from frame 0. Source GIF is low native resolution."
+    },
+    {
+      "section": "16-roadmap",
+      "file": "16_roadmap.webp",
+      "status": "accepted",
+      "model": "gpt_image_2_5",
+      "job_id": "ace83e1d-5c92-47df-b634-8b4ff13bedae",
+      "shot": "Monochrome photograph of an unbranded, sculptural high-performance concept vehicle on the cratered lunar surface, Earth rising large in the black sky behind it, long dramatic shadow across the regolith.",
+      "note": "Operator referenced /Users/paulestevez_ipx_temp/Downloads/0cbb1762_e44b_497b_b4b5_349a1f516b65_16_9.png, a real Aston Martin Valkyrie (Aston Martin wing badge visible on the nose) staged on the moon. Declined to use that image directly \u2014 same category as the Section 10 decision: a real, trademarked third-party product design and logo, which is not the operator's own Brand OS to waive. Generated an original alternative matching the mood and composition (unbranded concept car, lunar surface, Earth backdrop) with no visible logos or manufacturer marks. Converted to WebP, resized to 1920px wide (201KB)."
     }
   ],
   "pending": [
-    "16-roadmap (video)",
     "17-team",
     "18-ask",
     "19-close (video)",
