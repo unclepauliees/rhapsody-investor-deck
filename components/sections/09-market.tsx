@@ -12,7 +12,9 @@ export function MarketSection() {
   return (
     <SectionShell id="09-market" index="09">
       <StickyMediaSection
-        imgUrl="/media/09_market.webp"
+        videoUrl="/media/09_market.mp4"
+        webmUrl="/media/09_market.webm"
+        posterUrl="/media/09_market_poster.jpg"
         subheading="[ Opportunity ]"
         heading="We are not competing for media budgets. We are competing for the founding moment."
       >

@@ -86,12 +86,12 @@
     },
     {
       "section": "09-market",
-      "file": "09_market.webp",
+      "file": "09_market.mp4 / 09_market.webm",
       "status": "accepted",
-      "model": "gpt_image_2_5",
-      "job_id": "c54045d2-5c59-494e-a099-e4e22a38c84c",
-      "shot": "A couture atelier at night, empty, a single garment on a form under one lamp. Luxury waiting for a new venue.",
-      "note": "First attempt used soul_location and failed the Spine test (cluttered real-world workshop, laptop glow, plastic bins — broke restraint and negative-space rules). Regenerated with gpt_image_2_5; accepted."
+      "model": "operator-supplied (not generated)",
+      "job_id": null,
+      "shot": "A stylized comet against a dense starfield, morphing across several rendering styles through the clip (photoreal blue comet, painted flame-comet illustration, nebula streak with a bright star burst, blue-green comet).",
+      "note": "Replaced the earlier still (job c54045d2) with an operator-supplied clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_616473186.mp4) — not a Higgsfield generation. Source is 4:3 (960x720); StickyMediaSection's 16:9 aspect-video container crops it via object-cover. Re-encoded to H.264 (1.37MB) + VP9 WebM (1.17MB); poster from frame 0."
     }
   ],
   "pending": [
