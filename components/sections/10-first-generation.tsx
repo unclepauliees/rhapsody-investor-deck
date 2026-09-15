@@ -8,7 +8,7 @@ export function FirstGenerationSection() {
   return (
     <SectionShell id="10-first-generation" index="10">
       <StickyMediaSection
-        imgUrl="/media/10_first_generation.webp"
+        imgUrl="/media/10_first_generation.png"
         subheading="[ The First Generation ]"
         heading="We are not looking for customers. We are looking for the first generation."
       >

@@ -1,5 +1,4 @@
 import { Eyebrow } from "@/components/deck/eyebrow";
-import { CountUp } from "@/components/deck/count-up";
 import { SectionShell } from "@/components/deck/section-shell";
 import { StickyMediaSection } from "@/components/vendor/sticky-media-section";
 
@@ -30,7 +29,7 @@ export function AskSection() {
       >
         <Eyebrow>[ The Ask ]</Eyebrow>
         <h2 className="max-w-[62ch] font-didone text-[clamp(28px,3.8vw,44px)] leading-[1.1]">
-          <CountUp display="$1M" /> to open the studio and fly the first two
+          $1M to open the studio and fly the first two
           works.
         </h2>
         <p className="mt-3 font-mono-rh text-[11px] tracking-[0.12em] uppercase text-ink-mute">

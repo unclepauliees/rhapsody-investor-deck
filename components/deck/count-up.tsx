@@ -16,8 +16,6 @@ export function CountUp({
   const inView = useInView(ref, { once: true, margin: "-20% 0px" });
   const [text, setText] = useState(display);
 
-  const match = display.match(/^([^\d]*)(\d+(?:\.\d+)?)(.*)$/);
-
   useEffect(() => {
     if (!inView) return;
     // `text` already initialized to `display`, so reduced-motion / no-match
@@ -25,6 +23,7 @@ export function CountUp({
     if (typeof window !== "undefined" && window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return;
     }
+    const match = display.match(/^([^\d]*)(\d+(?:\.\d+)?)(.*)$/);
     if (!match) {
       return;
     }
@@ -44,7 +43,7 @@ export function CountUp({
     };
     raf = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(raf);
-  }, [inView, display, duration, match]);
+  }, [inView, display, duration]);
 
   return <span ref={ref}>{text}</span>;
 }

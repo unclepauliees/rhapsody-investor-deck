@@ -1,5 +1,4 @@
 import { Eyebrow } from "@/components/deck/eyebrow";
-import { CountUp } from "@/components/deck/count-up";
 import { SectionShell } from "@/components/deck/section-shell";
 import { StickyMediaSection } from "@/components/vendor/sticky-media-section";
 
@@ -35,7 +34,7 @@ export function EconomicsSection() {
           </div>
           <div>
             <p className="font-didone text-[clamp(28px,3vw,36px)] leading-none">
-              <CountUp display="90%+" />
+              90%+
             </p>
             <p className="mt-3 font-mono-rh text-[11px] leading-relaxed text-ink-mute">
               contribution margin on marginal platform capacity
@@ -53,7 +52,7 @@ export function EconomicsSection() {
 
         <div className="mt-10 border-t border-line">
           <Line date="2028 · Demonstrator" body={<>Two founding works fly. Contracted value: <strong className="text-ink">$1M–$4M</strong>, against a $1M pre-seed.</>} />
-          <Line date="2029 · First commercial platform" body={<>Studio contribution of <CountUp display="$58M" /> on 15% of platform capacity, per the parent&rsquo;s model, carried there as upside, not base case.</>} />
+          <Line date="2029 · First commercial platform" body={<>Studio contribution of $58M on 15% of platform capacity, per the parent&rsquo;s model, carried there as upside, not base case.</>} />
           <Line date="Governance" body="Long-term anchors capped at 40% of studio capacity. The margin lives in the unrepeatable." />
           <Line date="The floor" body="Studio Services to the parent's client book: every platform customer is a warm creative-services lead. Revenue before first light, and a cost base that pays for itself." />
         </div>
