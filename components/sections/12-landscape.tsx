@@ -19,7 +19,9 @@ export function LandscapeSection() {
   return (
     <SectionShell id="12-landscape" index="12">
       <StickyMediaSection
-        imgUrl="/media/12_landscape.webp"
+        videoUrl="/media/12_landscape.mp4"
+        webmUrl="/media/12_landscape.webm"
+        posterUrl="/media/12_landscape_poster.jpg"
         subheading="[ Landscape ]"
         heading="Nobody else has the venue, the instrument, and the gate."
       >

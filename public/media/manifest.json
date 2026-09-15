@@ -110,11 +110,27 @@
       "job_id": null,
       "shot": "A spherical orbital recording drone/camera, heavily detailed hard-surface CGI concept-art render on a plain grey backdrop — mechanical housings, a large purple-glowing lens, diagram callouts, weathered paint.",
       "note": "Operator's chosen image (/Users/paulestevez_ipx_temp/Downloads/cosmos_983883891_16_9.png), used directly. No visible artist credit/signature and no real third-party trademarks (the \"ORBITAL RECORDING ROBOT\" label is fictional prop text, not a brand) — used without objection, unlike the Section 10 case."
+    },
+    {
+      "section": "12-landscape",
+      "file": "12_landscape.mp4 / 12_landscape.webm",
+      "status": "accepted",
+      "model": "operator-supplied (not generated)",
+      "job_id": null,
+      "shot": "A sci-fi HUD/dashboard interface: targeting-reticle rings pulsing red/gold, telemetry readouts and on-screen labels along the edges.",
+      "note": "Operator's chosen clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_1270493928.gif) — the same reference declined for Section 07 on brand-OS grounds (mission-control/dashboard/sci-fi rendering hard lines). Used here without objection: those hard lines are the operator's own Brand OS, theirs to override, and there's no third-party trademark or credit issue with this asset (unlike the Section 10 case). Converted from GIF to H.264 (417KB) + VP9 WebM (304KB); poster from frame 0."
+    },
+    {
+      "section": "13-infrastructure",
+      "file": "13_infrastructure.webp",
+      "status": "accepted",
+      "model": "operator-supplied (not generated)",
+      "job_id": null,
+      "shot": "A rocket engine cluster firing at night — dozens of engine bells in a ring pattern, bright exhaust plumes, billowing orange-lit smoke.",
+      "note": "Operator's chosen image (/Users/paulestevez_ipx_temp/Downloads/cosmos_672339812.jpeg), used directly. No visible photographer credit or company logo, so no third-party IP objection — though the engine-cluster arrangement closely resembles a specific real launch vehicle (visually reads as SpaceX's Starship/Super Heavy) and could be recognized as such by viewers even without a mark. Noted for awareness, not held as a blocker: this is a literal rocket photo on the slide about the parent's platform, which the build note for this section says should be named 'in words only... no rocket, no orbit diagram' — that's the operator's own Brand OS call to keep or waive."
     }
   ],
   "pending": [
-    "12-landscape",
-    "13-infrastructure",
     "14-governance",
     "15-traction",
     "16-roadmap (video)",
