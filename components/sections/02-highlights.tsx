@@ -42,7 +42,9 @@ export function HighlightsSection() {
   return (
     <SectionShell id="02-highlights" index="02">
       <StickyMediaSection
-        imgUrl="/media/02_highlights.webp"
+        videoUrl="/media/02_highlights.mp4"
+        webmUrl="/media/02_highlights.webm"
+        posterUrl="/media/02_highlights_poster.jpg"
         subheading="[ Highlights ]"
         heading="Six reasons this is a studio, not a stunt."
       >

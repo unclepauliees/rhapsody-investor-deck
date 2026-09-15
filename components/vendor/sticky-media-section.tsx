@@ -13,6 +13,7 @@ import Image from "next/image";
 type Props = {
   imgUrl?: string;
   videoUrl?: string;
+  webmUrl?: string;
   posterUrl?: string;
   subheading: string;
   heading: string;
@@ -23,6 +24,7 @@ type Props = {
 export function StickyMediaSection({
   imgUrl,
   videoUrl,
+  webmUrl,
   posterUrl,
   subheading,
   heading,
@@ -56,6 +58,7 @@ export function StickyMediaSection({
               poster={posterUrl}
               preload="metadata"
             >
+              {webmUrl && <source src={webmUrl} type="video/webm" />}
               <source src={videoUrl} type="video/mp4" />
             </video>
           ) : imgUrl ? (

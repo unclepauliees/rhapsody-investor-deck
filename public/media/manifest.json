@@ -13,6 +13,15 @@
       "note": "Reference image supplied by operator (an existing Save the Date asset, /Users/paulestevez_ipx_temp/Downloads/hf_20260910_120734_0801ef2b-7c7d-4d5a-b809-5cb48d9498d7.png) used as start_image. Transcoded from source HEVC to H.264 (846KB) + VP9 WebM (288KB); poster extracted from frame 0."
     },
     {
+      "section": "02-highlights",
+      "file": "02_highlights.mp4 / 02_highlights.webm",
+      "status": "accepted",
+      "model": "seedance_2_5",
+      "job_id": "4ce08079-ee46-4903-8703-051f96234d45",
+      "shot": "Macro shot of a matte-black robotic arm's precision gripper adjusting an articulating boom clamp holding a matte-white unbranded sneaker suspended mid-air in a dark studio module. A bright key light flares hard behind the rig, sweeping across mechanical joints and support rods, then settles to reveal the sneaker in crisp macro focus. Through a viewport at frame edge, a planet's limb and faint stars are visible; dust motes drift weightlessly through the light beam.",
+      "note": "Operator-directed departure from the original media-matrix still concept (porcelain plinths) — replaced with a video reimagining a reference BTS product-rig clip (/Users/paulestevez_ipx_temp/Downloads/cosmos_1818242565.mp4) with a robot arm instead of human hands and an orbital setting. Pure text-to-video (no reference image). Transcoded from source HEVC to H.264 (1.68MB) + VP9 WebM (937KB); poster extracted from frame 0."
+    },
+    {
       "section": "06-solution",
       "file": "06_solution.webp",
       "status": "accepted",
@@ -32,7 +41,6 @@
   ],
   "pending": [
     "01-thesis",
-    "02-highlights",
     "03-why-now",
     "04-third-movement (video)",
     "05-problem",
