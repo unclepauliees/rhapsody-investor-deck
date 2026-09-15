@@ -81,8 +81,9 @@ public/brand/              # emblem/wordmark SVGs (from Rhapsody_BrandOS_GitHub_
 public/media/              # Higgsfield assets + manifest.json
 ```
 
-## Not yet done (stretch, per spec §08)
+## PDF Download
 
-`scripts/export-pdf.ts` (Playwright → `Rhapsody_Investor_Deck.pdf`) has not
-been built — it's marked as stretch, after everything else, and the media
-matrix isn't complete yet.
+The navigation has a disabled Download PDF button while the team reviews
+the draft. The final, separately designed landscape PDF will be supplied
+after content approval. Once provided, add it under `public/downloads`
+and replace the disabled button with a download link using `withBasePath`.

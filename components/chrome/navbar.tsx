@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { Download } from "lucide-react";
 import { useEffect, useState } from "react";
 import { SECTIONS } from "@/lib/sections-meta";
 import { withBasePath } from "@/lib/base-path";
@@ -35,10 +36,10 @@ export function Navbar() {
   return (
     <header className="fixed top-0 inset-x-0 z-50 flex justify-center px-4 pt-4">
       <nav
-        className="flex w-full max-w-5xl items-center justify-between gap-4 border border-[color:color-mix(in_oklab,var(--paper)_35%,transparent)] bg-[color:color-mix(in_oklab,var(--espresso)_72%,transparent)] px-5 py-3 text-paper backdrop-blur-md"
+        className="flex w-full max-w-5xl items-center justify-between gap-2 border border-[color:color-mix(in_oklab,var(--paper)_35%,transparent)] bg-[color:color-mix(in_oklab,var(--espresso)_72%,transparent)] px-3 py-3 text-paper backdrop-blur-md sm:gap-4 sm:px-5"
         aria-label="Presentation navigation"
       >
-        <div className="flex items-center gap-2.5 font-mono-rh text-[10px] tracking-[0.24em] uppercase">
+        <div className="flex items-center gap-2.5 whitespace-nowrap font-mono-rh text-[10px] tracking-[0.12em] uppercase sm:tracking-[0.24em]">
           <span className="inline-block h-4 w-6 shrink-0" aria-hidden>
             <Image
               src={withBasePath("/brand/emblem-on-dark.svg")}
@@ -53,14 +54,26 @@ export function Navbar() {
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="font-mono-rh text-[10px] tracking-[0.24em] uppercase text-[color:rgba(236,231,218,0.72)] hover:text-paper"
+          className="shrink-0 font-mono-rh text-[10px] tracking-[0.24em] uppercase text-[color:rgba(236,231,218,0.72)] hover:text-paper"
           aria-expanded={open}
         >
           {active} / 19
         </button>
 
-        <div className="hidden font-mono-rh text-[10px] tracking-[0.24em] uppercase text-[color:rgba(236,231,218,0.55)] sm:block">
-          Confidential · Sept 2026
+        <div className="flex shrink-0 items-center gap-4">
+          <span className="hidden font-mono-rh text-[10px] tracking-[0.24em] uppercase text-[color:rgba(236,231,218,0.55)] lg:block">
+            Confidential · Sept 2026
+          </span>
+          <button
+            type="button"
+            disabled
+            aria-label="Download PDF (coming soon)"
+            title="PDF coming soon"
+            className="inline-flex min-h-9 min-w-9 cursor-not-allowed items-center justify-center gap-2 font-mono-rh text-[10px] uppercase text-paper/45"
+          >
+            <Download className="size-4" aria-hidden="true" />
+            <span className="hidden sm:inline">Download PDF</span>
+          </button>
         </div>
       </nav>
 
