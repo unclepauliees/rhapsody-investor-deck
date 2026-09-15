@@ -153,22 +153,36 @@
   }
 }
 
-/* Fit portrait artwork below the navigation without disabling scroll motion. */
+.media-art {
+  transform: scale(var(--media-scale, 1));
+  opacity: var(--media-opacity, 1);
+}
+
+/* Zoom within a clipped full-screen frame so scroll motion never opens gaps. */
 @media (max-width: 767px) {
-  .portrait-media .media-stage {
-    padding: 80px 0 16px;
+  .media-stage {
+    height: 100dvh;
+    padding: 0;
   }
-  .portrait-media .media-art {
-    aspect-ratio: 9 / 16;
-    width: min(100%, calc((100svh - 96px) * 9 / 16));
+  .media-art {
+    aspect-ratio: auto;
+    width: 100%;
+    height: 100%;
+    max-width: none;
     margin: 0;
     border: 0;
+    overflow: hidden;
+    transform: none;
+    opacity: 1;
   }
-  .portrait-media .media-heading {
+  .media-content {
+    transform: scale(calc(2 - var(--media-scale, 1)));
+  }
+  .media-heading {
     top: 80px;
     bottom: 16px;
   }
-  .portrait-media .media-heading h2 {
+  .media-heading h2 {
     font-size: 32px;
   }
 }

@@ -7,7 +7,7 @@
 // so it is a near drop-in swap.
 
 import { useRef } from "react";
-import { motion, useScroll, useTransform } from "framer-motion";
+import { motion, useScroll, useTransform, type MotionStyle } from "framer-motion";
 import Image from "next/image";
 import { withBasePath } from "@/lib/base-path";
 
@@ -40,8 +40,10 @@ export function StickyMediaSection({
     offset: ["start start", "end start"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.86]);
-  const opacity = useTransform(scrollYProgress, [0, 0.75, 1], [1, 1, 0]);
+  const scale = useTransform(scrollYProgress, (progress) => 1 - progress * 0.14);
+  const opacity = useTransform(scrollYProgress, (progress) =>
+    Math.min(1, Math.max(0, (1 - progress) / 0.25))
+  );
   // Keep the title fade on the same measured progress as the sticky frame.
   const textOpacity = useTransform(scrollYProgress, (progress) =>
     Math.max(0, 1 - progress / 0.3)
@@ -51,9 +53,10 @@ export function StickyMediaSection({
     <div ref={ref} className={`relative${mobileImgUrl ? " portrait-media" : ""}`}>
       <div className="media-stage sticky top-0 flex h-[100svh] flex-col items-center justify-center overflow-hidden">
         <motion.div
-          style={{ scale, opacity }}
+          style={{ "--media-scale": scale, "--media-opacity": opacity } as MotionStyle}
           className="media-art relative mx-6 aspect-video w-full max-w-5xl border border-ink/70"
         >
+          <div className="media-content relative h-full w-full">
           {videoUrl ? (
             <video
               className="h-full w-full object-cover"
@@ -84,6 +87,7 @@ export function StickyMediaSection({
               media pending
             </div>
           )}
+          </div>
         </motion.div>
 
         <motion.div

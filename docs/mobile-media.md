@@ -3,10 +3,13 @@
 The September 15, 2026 user-supplied portrait artwork appears below 768px.
 Desktop imagery and the landscape PDF remain unchanged. Native picture
 sources select the portrait without downloading a hidden desktop duplicate.
-Mobile section headlines use the incumbent Bodoni face at 32px, overlaid on
-the 9:16 image with the existing contrast treatment. The sticky stage, image
-scaling, and headline fade remain active on phones. Portrait frames fit below
-the fixed navigation. Original artwork lettering and credits remain intact.
+All 18 content stages fill the mobile viewport with edge-to-edge images or
+videos using object-cover. Portrait sources remain selected below 768px;
+landscape sources crop centrally. Headlines use Bodoni at 32px over the media
+with the existing contrast treatment. The stage stays sticky while the media
+zooms inside a clipped frame and the headline fades. The frame never shrinks
+or fades into empty margins. Original artwork lettering and credits remain
+part of the source assets, though cover cropping varies by screen shape.
 
 | Section | Supplied source in Downloads |
 | --- | --- |
