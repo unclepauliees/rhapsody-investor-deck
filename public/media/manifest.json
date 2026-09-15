@@ -31,6 +31,15 @@
       "note": "Operator supplied a reference image (/Users/paulestevez_ipx_temp/Downloads/cosmos_324186223_16_9.png) of a similarly kit-bashed vintage camera prop carrying a visible NASA logo and NASA-red color scheme. Declined to use it directly or replicate the branding — real trademark exposure plus a direct violation of the deck's own hard line (no aerospace-agency association, ever). Regenerated the same weathered/hand-modified aesthetic with all insignia stripped and the accent recolored to Rhapsody vermilion (#C93A1E)."
     },
     {
+      "section": "03-why-now",
+      "file": "03_why_now.webp",
+      "status": "accepted",
+      "model": "gpt_image_2_5",
+      "job_id": "cec5f0b3-e086-40be-a2bf-82f5a29a9689",
+      "shot": "Extreme motion-blur streaks of light racing across a black void toward a thin luminous horizon line, where a planet's atmosphere glows faintly in muted blue-green at the edge of frame. Pure light and velocity, no visible spacecraft or hardware.",
+      "note": "Operator supplied a reference image (/Users/paulestevez_ipx_temp/Downloads/cosmos_134875125_16_9.png) of a literal satellite/spacecraft exterior (visible hull, radiator panels, mechanical hardware) racing over Earth's limb. Declined to use it or replicate the hardware — this is not a trademark issue like the Section 02 case, it's the exact category cliche the deck's entire premise exists to avoid (Spine hard line: no satellites, no spacecraft, no solar panels or antennae, ever). Kept only the kinetic motion-streak and atmospheric-glow mood, stripped of all mechanical/spacecraft content."
+    },
+    {
       "section": "06-solution",
       "file": "06_solution.webp",
       "status": "accepted",
@@ -49,7 +58,6 @@
     }
   ],
   "pending": [
-    "03-why-now",
     "04-third-movement (video)",
     "05-problem",
     "07-session (video)",
